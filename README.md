@@ -195,6 +195,8 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 
 [2026-05] ✅ [Causal Forcing++: Scalable Few-Step Autoregressive Diffusion Distillation for Real-Time Interactive Video Generation](https://arxiv.org/abs/2605.15141)
 
+[2026-05] ✅(One Step)[One-Forcing: Towards Stable One-Step Autoregressive Video Generation](https://arxiv.org/abs/2605.23458)
+
 [2026-03] ✅[Anchor Forcing: Anchor Memory and Tri-Region RoPE for Interactive Streaming Video Diffusion](https://arxiv.org/html/2603.13405v1)
 
 [2026-02] ✅[Context Forcing: Consistent Autoregressive Video Generation with Long Context](https://arxiv.org/abs/2602.06028)

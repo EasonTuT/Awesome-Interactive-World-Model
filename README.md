@@ -29,6 +29,10 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 
 ## 🔥 Recent Paper Updates
 
+[2026-06-08] ✅[Prisma-World: Camera-Controllable Multi-Agent Video World Model](https://arxiv.org/abs/2606.09507)
+
+[2026-06-08] ✅[Latent Spatial Memory for Video World Models](https://arxiv.org/abs/2606.09828)
+
 [2026-06-05] ✅[Streaming Video Generation with Streaming Force Control](https://arxiv.org/abs/2606.07508)
 
 [2026-06-04] ✅[RhymeFlow: Training-Free Acceleration for Video Generation with Asynchronous Denoising Flow Scheduling](https://arxiv.org/abs/2606.06309)
@@ -45,10 +49,6 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 [2026-05-31] ✅[Towards Interactive Video World Modeling: Frontiers, Challenges, Benchmarks, and Future Trends](https://arxiv.org/abs/2606.01164)
 
 [2026-05-29] ✅[Light Interaction: Training-Free Inference Acceleration for Interactive Video World Models](https://arxiv.org/abs/2605.31158)
-
-[2026-05-29] ✅[DecMem: Towards Minute-Long Consistent World Generation with Decoupled Memory](https://arxiv.org/abs/2605.31336)
-
-**[2026-05-28] ✅🌟(Full-stack open-source real-time interactive video world model framework)[minWM: A Full-Stack Open-Source Framework for Real-Time Interactive Video World Models](https://arxiv.org/abs/2605.30263)**
 
 ---
 ## Overview
@@ -117,6 +117,8 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 
 
 ## Multi-Agent World Model
+
+[2026-06] ✅[Prisma-World: Camera-Controllable Multi-Agent Video World Model](https://arxiv.org/abs/2606.09507)
 
 [2026-06] ❌️[MetaWorld: Scaling Multi-Agent Video World Model from Single-view Video Data](https://arxiv.org/abs/2606.02753)
 
@@ -235,6 +237,8 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 **[2026-02] ✅🌟(w/o Pose Memory)[Infinite-World: Scaling Interactive World Models to 1000-Frame Horizons via Pose-Free Hierarchical Memory](https://arxiv.org/abs/2602.02393)**
 
 **[2025-06] ❌️🌟(w/ Pose FOV overlap retrieval Memory)[Context as Memory: Scene-Consistent Interactive Long Video Generation with Memory Retrieval](https://arxiv.org/abs/2506.03141)**
+
+[2026-06] ✅[Latent Spatial Memory for Video World Models](https://arxiv.org/abs/2606.09828)
 
 [2026-06] ✅[Geometry-Aware Implicit Memory for Video World Models](https://arxiv.org/abs/2606.02436)
 

@@ -10,7 +10,7 @@
     <img src="https://img.shields.io/badge/Browse-Interactive%20Webpage-2563EB?style=for-the-badge" alt="Browse Interactive Website">
   </a>
   <br>
-  <a href="https://easontut.github.io/Awesome-Interactive-World-Model/"><b>🔥 👆 Open the interactive paper list 👆 🔥</b></a>
+  <b>🔥 👆 Open the interactive paper list 👆 🔥</b>
 </p>
 </div>
 

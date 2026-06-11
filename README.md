@@ -1,10 +1,25 @@
 <div align="center">
+<h1>📜 Interactive World Model papers organized by core research challenges. </h1>
+---
 
 <img src="data/title.png">
 
-**📜 Interactive World Model papers organized by core research challenges.** </br>
-👉 **Recommended: View the [paper list on our website](https://easontut.github.io/Awesome-Interactive-World-Model/) for a better browsing experience.**
+<table align="center">
+  <tr>
+    <td align="center">
+      <h3>🌐 Recommended: use the website for search, category filters, month navigation, and a cleaner browsing experience.</h3>
+      <a href="https://easontut.github.io/Awesome-Interactive-World-Model/"><b>Open the interactive paper list</b></a>
+    </td>
+  </tr>
+</table>
+
+<p>
+  <a href="https://easontut.github.io/Awesome-Interactive-World-Model/">
+    <img src="https://img.shields.io/badge/Browse-Interactive%20Website-2563EB?style=for-the-badge" alt="Browse Interactive Website">
+  </a>
+</p>
 </div>
+
 
 ---
 <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" style="border:none;">

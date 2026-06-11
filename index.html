@@ -12,10 +12,15 @@ body {
   min-height: 100vh;
 }
 .container { max-width: 960px; margin: 0 auto; padding: 24px 16px; }
-header { text-align: center; margin-bottom: 32px; }
+header { text-align: center; margin-bottom: 24px; }
 header h1 { font-size: 2rem; font-weight: 700; color: #1e293b; margin-bottom: 8px; }
 header p { color: #64748b; font-size: 0.95rem; max-width: 600px; margin: 0 auto; }
-.search-box { position: relative; max-width: 520px; margin: 24px auto 20px; }
+.toolbar {
+  position: sticky; top: 0; z-index: 10; padding: 12px 0 14px; margin-bottom: 20px;
+  background: rgba(248,249,250,0.92); border-bottom: 1px solid rgba(226,232,240,0.85);
+  backdrop-filter: blur(14px);
+}
+.search-box { position: relative; max-width: 560px; margin: 0 auto 14px; }
 .search-box input {
   width: 100%; padding: 12px 16px 12px 42px; border: 1.5px solid #e2e8f0;
   border-radius: 10px; font-size: 0.95rem; background: #fff;
@@ -23,7 +28,7 @@ header p { color: #64748b; font-size: 0.95rem; max-width: 600px; margin: 0 auto;
 }
 .search-box input:focus { border-color: #2563eb; box-shadow: 0 0 0 3px rgba(37,99,235,0.1); }
 .search-box svg { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: #94a3b8; }
-.filters { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 16px; }
+.filters { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
 .filter-group { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
 .filter-label { font-size: 0.8rem; color: #64748b; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-right: 4px; }
 .filter-btn {
@@ -42,31 +47,60 @@ header p { color: #64748b; font-size: 0.95rem; max-width: 600px; margin: 0 auto;
   transition: border-color 0.2s;
 }
 .category-select:focus { border-color: #2563eb; }
-.paper-list { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+.paper-list { display: flex; flex-direction: column; gap: 12px; margin-top: 18px; }
 .paper-card {
-  background: #fff; border-radius: 10px; padding: 16px 20px;
-  border: 1px solid #e8ecf0; transition: box-shadow 0.2s, transform 0.15s;
+  position: relative; background: #fff; border-radius: 10px; padding: 15px 18px 14px 20px;
+  border: 1px solid #e8ecf0; overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.15s, border-color 0.2s;
 }
-.paper-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.06); transform: translateY(-1px); }
-.paper-header { display: flex; align-items: flex-start; gap: 10px; }
-.paper-tags { display: flex; gap: 4px; flex-shrink: 0; margin-top: 2px; }
-.tag { font-size: 0.9rem; line-height: 1; }
+.paper-card:hover { box-shadow: 0 8px 24px rgba(15,23,42,0.07); transform: translateY(-1px); border-color: #dbe3ec; }
+.paper-card.starred { border-left: 4px solid #f59e0b; padding-left: 17px; }
+.paper-card.starred::before {
+  content: ""; position: absolute; inset: 0 auto 0 0; width: 4px;
+  background: linear-gradient(180deg, #f59e0b, #fbbf24);
+}
+.paper-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; }
+.paper-main { min-width: 0; flex: 1; }
+.paper-badges { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; margin-bottom: 6px; }
+.badge {
+  display: inline-flex; align-items: center; height: 22px; padding: 0 8px; border-radius: 999px;
+  font-size: 0.72rem; font-weight: 700; line-height: 1; white-space: nowrap;
+}
+.badge-star { color: #92400e; background: #fef3c7; border: 1px solid #fde68a; }
+.badge-open { color: #047857; background: #d1fae5; border: 1px solid #a7f3d0; }
+.badge-closed { color: #b91c1c; background: #fee2e2; border: 1px solid #fecaca; }
 .paper-title {
-  font-size: 0.95rem; font-weight: 600; color: #1e293b;
-  text-decoration: none; transition: color 0.2s; flex: 1;
+  display: block; font-size: 0.98rem; font-weight: 650; color: #172033;
+  line-height: 1.42; text-decoration: none; transition: color 0.2s;
 }
 .paper-title:hover { color: #2563eb; }
-.paper-meta { display: flex; align-items: center; gap: 10px; margin-top: 8px; flex-wrap: wrap; }
+.paper-date {
+  flex-shrink: 0; color: #64748b; background: #f8fafc; border: 1px solid #e2e8f0;
+  padding: 3px 8px; border-radius: 6px; font-size: 0.74rem; font-weight: 700;
+}
+.paper-meta { display: flex; align-items: center; gap: 7px; margin-top: 9px; flex-wrap: wrap; }
 .paper-category {
-  font-size: 0.75rem; background: #eff6ff; color: #2563eb;
-  padding: 3px 8px; border-radius: 4px; font-weight: 500;
+  font-size: 0.74rem; background: #eff6ff; color: #2563eb;
+  padding: 3px 8px; border-radius: 6px; font-weight: 650;
   cursor: pointer; transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 }
 .paper-category:hover {
   background: #2563eb; color: #fff; box-shadow: 0 1px 4px rgba(37,99,235,0.25);
 }
-.paper-desc { font-size: 0.8rem; color: #64748b; font-style: italic; }
-.paper-arxiv { font-size: 0.75rem; color: #94a3b8; }
+.cat-general-world-model { background: #dbeafe; color: #1d4ed8; }
+.cat-multi-agent-world-model { background: #ede9fe; color: #6d28d9; }
+.cat-benchmark { background: #cffafe; color: #0e7490; }
+.cat-dataset { background: #e0f2fe; color: #0369a1; }
+.cat-long-video-generation { background: #f3e8ff; color: #7e22ce; }
+.cat-static-memory, .cat-dynamic-memory { background: #dcfce7; color: #15803d; }
+.cat-action-control, .cat-interactive { background: #ffedd5; color: #c2410c; }
+.cat-post-training { background: #fef9c3; color: #a16207; }
+.cat-physics, .cat-evaluation { background: #e0f2f1; color: #0f766e; }
+.cat-survey { background: #f1f5f9; color: #475569; }
+.paper-desc {
+  margin-top: 9px; font-size: 0.82rem; color: #526174; line-height: 1.55;
+}
+.paper-arxiv { font-size: 0.74rem; color: #94a3b8; font-weight: 600; }
 .status-bar {
   text-align: center; margin-top: 24px; padding: 12px;
   color: #64748b; font-size: 0.85rem;
@@ -96,17 +130,23 @@ header p { color: #64748b; font-size: 0.95rem; max-width: 600px; margin: 0 auto;
   padding: 2px 6px; border-radius: 999px;
 }
 .month-btn {
-  min-width: 62px; height: 24px; padding: 0 8px; border: 1px solid #dbe3ec;
+  min-width: 84px; height: 26px; padding: 0 8px; border: 1px solid #dbe3ec;
   border-radius: 999px; background: rgba(255,255,255,0.96); color: #64748b;
-  font-size: 0.72rem; font-weight: 600; cursor: pointer;
+  font-size: 0.72rem; font-weight: 650; cursor: pointer;
   transition: border-color 0.2s, background 0.2s, color 0.2s, transform 0.15s;
 }
+.month-count { color: #94a3b8; font-weight: 700; margin-left: 3px; }
+.month-btn.active .month-count, .month-btn:hover .month-count { color: currentColor; }
 .month-btn:hover { border-color: #2563eb; color: #2563eb; transform: translateX(-2px); }
 .month-btn.active { background: #1e293b; color: #fff; border-color: #1e293b; }
 @media (max-width: 640px) {
   header h1 { font-size: 1.5rem; }
   .container { padding: 16px 12px; }
   .paper-card { padding: 12px 14px; }
+  .paper-card.starred { padding-left: 13px; }
+  .toolbar { margin-left: -12px; margin-right: -12px; padding-left: 12px; padding-right: 12px; }
+  .paper-header { display: block; }
+  .paper-date { display: inline-block; margin-top: 8px; }
   .filters { gap: 8px; }
 }
 @media (max-width: 1160px) {
@@ -120,29 +160,31 @@ header p { color: #64748b; font-size: 0.95rem; max-width: 600px; margin: 0 auto;
     <h1><img src="data/logo.png" alt="icon" style="width:52px;height:52px;vertical-align:middle;margin-right:10px;">Awesome Interactive World Model</h1>
     <p>A curated collection of Interactive World Model papers, systematically categorized by key research problems.</p>
   </header>
-  <div class="search-box">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-    <input type="text" id="searchInput" placeholder="Search papers by title...">
-  </div>
-  <div class="filters">
-    <div class="filter-group">
-      <span class="filter-label">Tags</span>
-      <button class="filter-btn active" data-tag="all">All</button>
-      <button class="filter-btn" data-tag="star">🌟 Classic</button>
-      <button class="filter-btn" data-tag="opensource">✅ Open Source</button>
-      <button class="filter-btn" data-tag="closed">❌️ Closed</button>
+  <div class="toolbar">
+    <div class="search-box">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="searchInput" placeholder="Search papers by title...">
     </div>
-    <div class="filter-group">
-      <span class="filter-label">Category</span>
-      <select class="category-select" id="categorySelect">
-        <option value="all">All Categories</option>
-      </select>
-    </div>
-    <div class="filter-group">
-      <span class="filter-label">Desc</span>
-      <div class="lang-toggle" id="langToggle">
-        <span class="active" data-lang="zh">中文</span>
-        <span data-lang="en">EN</span>
+    <div class="filters">
+      <div class="filter-group">
+        <span class="filter-label">Tags</span>
+        <button class="filter-btn active" data-tag="all">All</button>
+        <button class="filter-btn" data-tag="star">🌟 Classic</button>
+        <button class="filter-btn" data-tag="opensource">✅ Open Source</button>
+        <button class="filter-btn" data-tag="closed">❌️ Closed</button>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Category</span>
+        <select class="category-select" id="categorySelect">
+          <option value="all">All Categories</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Desc</span>
+        <div class="lang-toggle" id="langToggle">
+          <span class="active" data-lang="zh">中文</span>
+          <span data-lang="en">EN</span>
+        </div>
       </div>
     </div>
   </div>
@@ -353,9 +395,29 @@ function matchesFilters(p, includeMonth = true) {
   return true;
 }
 
+function paperDateLabel(p) {
+  if (p.date) return p.date;
+  return paperMonth(p);
+}
+
+function categoryClass(category) {
+  return `cat-${category.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`;
+}
+
 function getAvailableMonths() {
-  return [...new Set(papers.filter(p => matchesFilters(p, false)).map(paperMonth).filter(Boolean))]
-    .sort((a, b) => b.localeCompare(a));
+  const counts = new Map();
+  papers.filter(p => matchesFilters(p, false)).forEach(p => {
+    const month = paperMonth(p);
+    if (!month) return;
+    counts.set(month, (counts.get(month) || 0) + 1);
+  });
+  return [...counts.entries()].sort((a, b) => b[0].localeCompare(a[0]));
+}
+
+function ensureActiveMonth() {
+  if (activeMonth === "all") return;
+  const hasMonth = getAvailableMonths().some(([month]) => month === activeMonth);
+  if (!hasMonth) activeMonth = "all";
 }
 
 /* Filter and sort papers */
@@ -380,11 +442,12 @@ function renderMonthRail() {
   const rail = document.getElementById("monthRail");
   if (!rail) return;
   const months = getAvailableMonths();
+  const allCount = papers.filter(p => matchesFilters(p, false)).length;
   rail.innerHTML = `
     <div class="month-progress" aria-hidden="true"><span class="month-progress-fill" id="monthProgressFill"></span></div>
     <div class="month-title">Month</div>
-    <button class="month-btn ${activeMonth === "all" ? "active" : ""}" data-month="all" type="button">All</button>
-    ${months.map(month => `<button class="month-btn ${activeMonth === month ? "active" : ""}" data-month="${month}" type="button">${month}</button>`).join("")}
+    <button class="month-btn ${activeMonth === "all" ? "active" : ""}" data-month="all" type="button">All <span class="month-count">${allCount}</span></button>
+    ${months.map(([month, count]) => `<button class="month-btn ${activeMonth === month ? "active" : ""}" data-month="${month}" type="button">${month} <span class="month-count">${count}</span></button>`).join("")}
   `;
   rail.querySelectorAll(".month-btn").forEach(btn => {
     btn.addEventListener("click", () => {
@@ -406,29 +469,37 @@ function updateMonthProgress() {
 
 /* Render papers */
 function render() {
+  ensureActiveMonth();
   const list = document.getElementById("paperList");
   const filtered = getFiltered();
   if (filtered.length === 0) {
     list.innerHTML = '<div class="empty-state"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#cbd5e1" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><p>No papers found</p></div>';
   } else {
     list.innerHTML = filtered.map(p => {
-      const tagIcons = p.tags.map(t => {
-        if (t === "star") return '<span class="tag" title="Classic">🌟</span>';
-        if (t === "opensource") return '<span class="tag" title="Open Source">✅</span>';
-        if (t === "closed") return '<span class="tag" title="Closed Source">❌️</span>';
+      const isStarred = p.tags.includes("star");
+      const badges = p.tags.map(t => {
+        if (t === "star") return '<span class="badge badge-star">🌟 Classic</span>';
+        if (t === "opensource") return '<span class="badge badge-open">✅ Open Source</span>';
+        if (t === "closed") return '<span class="badge badge-closed">❌ Closed</span>';
         return "";
       }).join("");
       const descText = activeLang === "en" && p.descriptionEn ? p.descriptionEn : p.description;
-      const desc = descText ? `<span class="paper-desc">${descText}</span>` : "";
+      const desc = descText ? `<div class="paper-desc">${descText}</div>` : "";
       const aid = p.arxivId ? `<span class="paper-arxiv">arXiv: ${p.arxivId}</span>` : "";
-      return `<div class="paper-card">
+      const date = paperDateLabel(p);
+      const dateMeta = date ? `<span class="paper-date">${date}</span>` : "";
+      return `<div class="paper-card ${isStarred ? "starred" : ""}">
         <div class="paper-header">
-          <div class="paper-tags">${tagIcons}</div>
-          <a class="paper-title" href="${p.url}" target="_blank" rel="noopener">${p.title}</a>
+          <div class="paper-main">
+            <div class="paper-badges">${badges}</div>
+            <a class="paper-title" href="${p.url}" target="_blank" rel="noopener">${p.title}</a>
+          </div>
+          ${dateMeta}
         </div>
         <div class="paper-meta">
-          ${p.categories.map(c => `<span class="paper-category" onclick="filterByCategory('${c}')">${c}</span>`).join("")}${desc}${aid}
+          ${p.categories.map(c => `<span class="paper-category ${categoryClass(c)}" onclick="filterByCategory('${c}')">${c}</span>`).join("")}${aid}
         </div>
+        ${desc}
       </div>`;
     }).join("");
   }

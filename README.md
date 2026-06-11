@@ -4,19 +4,13 @@
 
 <img src="data/title.png">
 
-<table align="center">
-  <tr>
-    <td align="center">
-      <h3>🌐 Recommended: use the website for search, category filters, month navigation, and a cleaner browsing experience.</h3>
-      <a href="https://easontut.github.io/Awesome-Interactive-World-Model/"><b>Open the interactive paper list</b></a>
-    </td>
-  </tr>
-</table>
-
+<h3>🌐 Recommended: use the website for search, category filters, month navigation, and a cleaner browsing experience.</h3>
 <p>
   <a href="https://easontut.github.io/Awesome-Interactive-World-Model/">
-    <img src="https://img.shields.io/badge/Browse-Interactive%20Website-2563EB?style=for-the-badge" alt="Browse Interactive Website">
+    <img src="https://img.shields.io/badge/Browse-Interactive%20Webpage-2563EB?style=for-the-badge" alt="Browse Interactive Website">
   </a>
+  <br>
+  <a href="https://easontut.github.io/Awesome-Interactive-World-Model/"><b>🔥 👆 Open the interactive paper list 👆 🔥</b></a>
 </p>
 </div>
 

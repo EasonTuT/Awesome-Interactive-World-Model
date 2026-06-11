@@ -77,11 +77,40 @@ header p { color: #64748b; font-size: 0.95rem; max-width: 600px; margin: 0 auto;
 .lang-toggle span { padding: 6px 12px; transition: all 0.2s; white-space: nowrap; }
 .lang-toggle span.active { background: #2563eb; color: #fff; }
 .lang-toggle span:not(.active):hover { background: #eff6ff; }
+.month-rail {
+  position: fixed; top: 50%; right: max(16px, calc((100vw - 960px) / 2 - 96px));
+  transform: translateY(-50%); z-index: 20; display: flex; flex-direction: column;
+  align-items: center; gap: 6px; padding: 8px 0;
+}
+.month-progress {
+  position: absolute; top: 8px; bottom: 8px; left: 50%; width: 2px;
+  transform: translateX(-50%); background: #e2e8f0; border-radius: 999px; z-index: -1;
+}
+.month-progress-fill {
+  display: block; width: 100%; height: 0; background: #2563eb;
+  border-radius: 999px; transition: height 0.1s linear;
+}
+.month-title {
+  background: rgba(248,249,250,0.96); color: #64748b; font-size: 0.68rem;
+  font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+  padding: 2px 6px; border-radius: 999px;
+}
+.month-btn {
+  min-width: 62px; height: 24px; padding: 0 8px; border: 1px solid #dbe3ec;
+  border-radius: 999px; background: rgba(255,255,255,0.96); color: #64748b;
+  font-size: 0.72rem; font-weight: 600; cursor: pointer;
+  transition: border-color 0.2s, background 0.2s, color 0.2s, transform 0.15s;
+}
+.month-btn:hover { border-color: #2563eb; color: #2563eb; transform: translateX(-2px); }
+.month-btn.active { background: #1e293b; color: #fff; border-color: #1e293b; }
 @media (max-width: 640px) {
   header h1 { font-size: 1.5rem; }
   .container { padding: 16px 12px; }
   .paper-card { padding: 12px 14px; }
   .filters { gap: 8px; }
+}
+@media (max-width: 1160px) {
+  .month-rail { display: none; }
 }
 </style>
 </head>
@@ -120,6 +149,7 @@ header p { color: #64748b; font-size: 0.95rem; max-width: 600px; margin: 0 auto;
   <div class="paper-list" id="paperList"></div>
   <div class="status-bar" id="statusBar"></div>
 </div>
+<nav class="month-rail" id="monthRail" aria-label="Paper month navigation"></nav>
 <script>
 const papers = [
   {title:"Lingbot-World:Advancing Open-source World Models",url:"https://arxiv.org/abs/2601.20540",categories:["General World Model"],tags:["star","opensource"],description:"分钟级别Memory",descriptionEn:"Minute-level Memory",arxivId:"2601.20540"},
@@ -175,7 +205,7 @@ const papers = [
   {title:"VMem: Consistent Interactive Video Scene Generation with Surfel-Indexed View Memory",url:"https://arxiv.org/abs/2506.18903",categories:["Static Memory"],tags:["opensource"],description:"",arxivId:"2506.18903"},
   {title:"Video World Models with Long-term Spatial Memory",url:"https://arxiv.org/abs/2506.05284",categories:["Static Memory"],tags:["closed"],description:"",arxivId:"2506.05284"},
   {title:"StableWorld: Towards Stable and Consistent Long Interactive Video Generation",url:"https://arxiv.org/abs/2601.15281",categories:["Static Memory"],tags:["opensource"],description:"",arxivId:"2601.15281"},
-  {title:"Infinite-World: Scaling Interactive World Models to 1000-Frame Horizons via Pose-Free Hierarchical Memory",url:"https://arxiv.org/abs/2602.02393",categories:["Static Memory"],tags:["star","opensource"],description:"w/o Pose Memory",descriptionEn:"w/o Pose Memory",arxivId:"2602.02393"},
+  {title:"Infinite-World: Scaling Interactive World Models to 1000-Frame Horizons via Pose-Free Hierarchical Memory",url:"https://arxiv.org/abs/2602.02393",categories:["Static Memory"],tags:["star","opensource"],description:"无位姿记忆",descriptionEn:"w/o Pose Memory",arxivId:"2602.02393"},
   {title:"AnchorWeave: World-Consistent Video Generation with Retrieved Local Spatial Memories",url:"https://arxiv.org/abs/2602.14941",categories:["Static Memory"],tags:["opensource"],description:"",arxivId:"2602.14941"},
   {title:"Learning World Models for Interactive Video Generation",url:"https://arxiv.org/abs/2505.21996",categories:["Static Memory"],tags:["opensource"],description:"",arxivId:"2505.21996"},
   {title:"Memory Forcing: Spatio-Temporal Memory for Consistent Scene Generation on Minecraft",url:"https://arxiv.org/abs/2510.03198",categories:["Static Memory"],tags:["closed"],description:"",arxivId:"2510.03198"},
@@ -185,7 +215,7 @@ const papers = [
   {title:"Flow Equivariant World Models: Structured Dynamics Outside the Field of View",url:"https://arxiv.org/abs/2601.01075",categories:["Dynamic Memory"],tags:["star","opensource"],description:"首个视野外Dynamic Memory",descriptionEn:"First out-of-view Dynamic Memory",arxivId:"2601.01075"},
   {title:"LiveWorld: Simulating Out-of-Sight Dynamics in Generative Video World Models",url:"https://arxiv.org/abs/2603.07145",categories:["Dynamic Memory"],tags:["star","opensource"],description:"首个视野外Event Dynamic Memory",descriptionEn:"First out-of-view Event Dynamic Memory",arxivId:"2603.07145"},
   {title:"Solaris: Building a Multiplayer Video World Model in Minecraft",url:"https://arxiv.org/abs/2602.22208",categories:["Dynamic Memory"],tags:["star","opensource"],description:"首个多人Minecraft World Model",descriptionEn:"First multiplayer Minecraft World Model",arxivId:"2602.22208"},
-  {title:"MultiWorld: Scalable Multi-Agent Multi-View Video World Models",url:"https://arxiv.org/abs/2604.18564",categories:["Dynamic Memory"],tags:["opensource"],description:"",arxivId:"2604.18564"},
+  {title:"MultiWorld: Scalable Multi-Agent Multi-View Video World Models",url:"https://arxiv.org/abs/2604.18564",categories:["Multi-Agent World Model"],tags:["opensource"],description:"",arxivId:"2604.18564"},
   {title:"Out of Sight but Not Out of Mind: Hybrid Memory for Dynamic Video World Models",url:"https://arxiv.org/pdf/2603.25716",categories:["Dynamic Memory"],tags:["opensource"],description:"",arxivId:"2603.25716"},
   {title:"Olaf-World: Orienting Latent Actions for Video World Modeling",url:"https://arxiv.org/abs/2602.10104",categories:["Action Control"],tags:["star","opensource"],description:"迁移技能",descriptionEn:"Transferable skills",arxivId:"2602.10104"},
   {title:"AdaWorld: Learning Adaptable World Models with Latent Actions",url:"https://arxiv.org/abs/2503.18938",categories:["Action Control"],tags:["star","opensource"],description:"不再受限于固定的控制",descriptionEn:"No longer limited to fixed controls",arxivId:"2503.18938"},
@@ -199,17 +229,52 @@ const papers = [
   {title:"Interactive World Simulator for Robot Policy Training and Evaluation",url:"https://arxiv.org/abs/2603.08546",categories:["Evaluation"],tags:["opensource"],description:"",arxivId:"2603.08546"},
   {title:"Vid2World: Crafting Video Diffusion Models to Interactive World Models",url:"https://arxiv.org/abs/2505.14357",categories:["Others"],tags:["opensource"],description:"",arxivId:"2505.14357"},
   {title:"LongLive-2.0: An NVFP4 Parallel Infrastructure for Long Video Generation",url:"https://arxiv.org/abs/2605.18739",categories:["Long Video Generation"],tags:["opensource"],description:"",arxivId:"2605.18739"},
-  {title:"ReactiveGWM: Steering NPC in Reactive Game World Models",url:"https://arxiv.org/abs/2605.15256",categories:["Interactive"],tags:["opensource"],description:"",arxivId:"2605.15256"}
+  {title:"ReactiveGWM: Steering NPC in Reactive Game World Models",url:"https://arxiv.org/abs/2605.15256",categories:["Action Control"],tags:["opensource"],description:"",arxivId:"2605.15256"},
+  {title:"Cosmos 3: Omnimodal World Models for Physical AI",url:"https://research.nvidia.com/labs/cosmos-lab/cosmos3/technical-report.pdf",categories:["General World Model"],tags:["star","opensource"],description:"全模态世界模型，支持理解、生成、仿真和动作",descriptionEn:"Omnimodal world model for understanding, generation, simulation, and action",arxivId:null,date:"2026-06-01"},
+  {title:"Latent Spatial Memory for Video World Models",url:"https://arxiv.org/abs/2606.09828",categories:["Static Memory"],tags:["opensource"],description:"",arxivId:"2606.09828"},
+  {title:"Prisma-World: Camera-Controllable Multi-Agent Video World Model",url:"https://arxiv.org/abs/2606.09507",categories:["Multi-Agent World Model"],tags:["opensource"],description:"",arxivId:"2606.09507"},
+  {title:"Streaming Video Generation with Streaming Force Control",url:"https://arxiv.org/abs/2606.07508",categories:["Action Control"],tags:["opensource"],description:"",arxivId:"2606.07508"},
+  {title:"RhymeFlow: Training-Free Acceleration for Video Generation with Asynchronous Denoising Flow Scheduling",url:"https://arxiv.org/abs/2606.06309",categories:["Long Video Generation"],tags:["opensource"],description:"",arxivId:"2606.06309"},
+  {title:"Echo-Infinity: Learning Evolving Memory for Real-Time Infinite Video Generation",url:"https://arxiv.org/abs/2606.04527",categories:["Long Video Generation"],tags:["opensource"],description:"",arxivId:"2606.04527"},
+  {title:"MetaWorld: Scaling Multi-Agent Video World Model from Single-view Video Data",url:"https://arxiv.org/abs/2606.02753",categories:["Multi-Agent World Model"],tags:["closed"],description:"",arxivId:"2606.02753"},
+  {title:"Geometry-Aware Implicit Memory for Video World Models",url:"https://arxiv.org/abs/2606.02436",categories:["Static Memory"],tags:["opensource"],description:"",arxivId:"2606.02436"},
+  {title:"Towards Interactive Video World Modeling: Frontiers, Challenges, Benchmarks, and Future Trends",url:"https://arxiv.org/abs/2606.01164",categories:["Survey"],tags:["opensource"],description:"",arxivId:"2606.01164"},
+  {title:"DecMem: Towards Minute-Long Consistent World Generation with Decoupled Memory",url:"https://arxiv.org/abs/2605.31336",categories:["Long Video Generation"],tags:["opensource"],description:"",arxivId:"2605.31336"},
+  {title:"Light Interaction: Training-Free Inference Acceleration for Interactive Video World Models",url:"https://arxiv.org/abs/2605.31158",categories:["General World Model"],tags:["opensource"],description:"",arxivId:"2605.31158"},
+  {title:"OmniMem: Scalable and Adaptive Memory Retrieval for Long Video Generation",url:"https://arxiv.org/abs/2605.30519",categories:["Static Memory"],tags:["opensource"],description:"",arxivId:"2605.30519"},
+  {title:"VideoMLA: Low-Rank Latent KV Cache for Minute-Scale Autoregressive Video Diffusion",url:"https://arxiv.org/abs/2605.30351",categories:["Long Video Generation"],tags:["opensource"],description:"",arxivId:"2605.30351"},
+  {title:"AdaState: Self-Evolving Anchors for Streaming Video Generation",url:"https://arxiv.org/abs/2605.30349",categories:["Long Video Generation"],tags:["opensource"],description:"",arxivId:"2605.30349"},
+  {title:"minWM: A Full-Stack Open-Source Framework for Real-Time Interactive Video World Models",url:"https://arxiv.org/abs/2605.30263",categories:["General World Model"],tags:["star","opensource"],description:"全栈开源实时交互视频世界模型框架",descriptionEn:"Full-stack open-source real-time interactive video world model framework",arxivId:"2605.30263"},
+  {title:"Future Forcing: Future-aware Training-free KV Cache Policy for Autoregressive Video Generation",url:"https://arxiv.org/abs/2605.30083",categories:["Long Video Generation"],tags:["closed"],description:"",arxivId:"2605.30083"},
+  {title:"Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players",url:"https://arxiv.org/abs/2605.28816",categories:["Multi-Agent World Model"],tags:["closed"],description:"",arxivId:"2605.28816"},
+  {title:"E3C: Video Generation with 3D Environmental Memory and Ego-Exo Human Pose Control",url:"https://arxiv.org/abs/2605.26316",categories:["Static Memory","Action Control"],tags:["opensource"],description:"",arxivId:"2605.26316"},
+  {title:"WBench: A Comprehensive Multi-turn Benchmark for Interactive Video World Model Evaluation",url:"https://arxiv.org/abs/2605.25874",categories:["Benchmark"],tags:["star","opensource"],description:"多轮交互式世界模型评测",descriptionEn:"Multi-turn interactive world model evaluation",arxivId:"2605.25874"},
+  {title:"Teaching Video Generators to Remember: Eliciting Dynamic Memory for Out-of-Sight State Evolution",url:"https://arxiv.org/abs/2605.25333",categories:["Dynamic Memory"],tags:["closed"],description:"",arxivId:"2605.25333"},
+  {title:"One-Forcing: Towards Stable One-Step Autoregressive Video Generation",url:"https://arxiv.org/abs/2605.23458",categories:["Long Video Generation"],tags:["opensource"],description:"",arxivId:"2605.23458"},
+  {title:"SCOPE: Simulating Cross-game Operations in Playable Environments for FPS World Models",url:"https://arxiv.org/abs/2605.23345",categories:["Action Control"],tags:["opensource"],description:"",arxivId:"2605.23345"},
+  {title:"WorldKV: Efficient World Memory with World Retrieval and Compression",url:"https://arxiv.org/abs/2605.22718",categories:["Static Memory"],tags:["opensource"],description:"",arxivId:"2605.22718"},
+  {title:"Q-ARVD: Quantizing Autoregressive Video Diffusion Models",url:"https://arxiv.org/abs/2605.21072",categories:["Long Video Generation"],tags:["opensource"],description:"",arxivId:"2605.21072"},
+  {title:"DySink: Dynamic Frame Sinks for Autoregressive Long Video Generation",url:"https://arxiv.org/abs/2605.21028",categories:["Long Video Generation"],tags:["closed"],description:"",arxivId:"2605.21028"},
+  {title:"FlowLong: Inference-time Long Video Generation via Manifold-constrained Tweedie Matching",url:"https://arxiv.org/abs/2605.20910",categories:["Long Video Generation"],tags:["opensource"],description:"",arxivId:"2605.20910"},
+  {title:"World Action Models: The Next Frontier in Embodied AI",url:"https://arxiv.org/abs/2605.12090",categories:["Survey"],tags:["closed"],description:"",arxivId:"2605.12090"},
+  {title:"OpenWorldLib: A Unified Codebase and Definition of Advanced World Models",url:"https://arxiv.org/abs/2604.04707",categories:["Survey"],tags:["star","opensource"],description:"围绕感知、交互和长期记忆定义高级世界模型，并提供统一推理框架 OpenWorldLib。",descriptionEn:"Defines advanced world models around perception, interaction, and long-term memory, and introduces OpenWorldLib as a unified inference framework.",arxivId:"2604.04707"},
+  {title:"Video Generation Models as World Models: Efficient Paradigms, Architectures and Algorithms",url:"https://arxiv.org/abs/2603.28489",categories:["Survey"],tags:["closed"],description:"",arxivId:"2603.28489"},
+  {title:"Anchor Forcing: Anchor Memory and Tri-Region RoPE for Interactive Streaming Video Diffusion",url:"https://arxiv.org/html/2603.13405v1",categories:["Long Video Generation"],tags:["opensource"],description:"",arxivId:"2603.13405"},
+  {title:"Helios: Real Real-Time Long Video Generation Model",url:"https://arxiv.org/abs/2603.04379",categories:["Long Video Generation"],tags:["star","opensource"],description:"将实时模型扩展到 14B 参数",descriptionEn:"Scale up Real-Time model to 14B",arxivId:"2603.04379"},
+  {title:"MagicWorld: Towards Long-Horizon Stability for Interactive Video World Exploration",url:"https://arxiv.org/abs/2511.18886",categories:["General World Model"],tags:["opensource"],description:"",arxivId:"2511.18886"},
+  {title:"Yume: An Interactive World Generation Model",url:"https://arxiv.org/abs/2507.17744",categories:["General World Model"],tags:["opensource"],description:"",arxivId:"2507.17744"},
+  {title:"Matrix-Game: Interactive World Foundation Model",url:"https://arxiv.org/abs/2506.18701",categories:["General World Model"],tags:["opensource"],description:"",arxivId:"2506.18701"}
 ];
 
 /* Categories list */
-const categories = ["General World Model","Benchmark","Dataset","Long Video Generation","Static Memory","Dynamic Memory","Action Control","Interactive","Post-Training","Physics","Evaluation","Others"];
+const categories = ["General World Model","Multi-Agent World Model","Benchmark","Dataset","Long Video Generation","Static Memory","Dynamic Memory","Action Control","Interactive","Post-Training","Physics","Evaluation","Survey","Others"];
 
 /* State */
 let activeTag = "all";
 let activeCategory = "all";
 let searchQuery = "";
 let activeLang = "zh";
+let activeMonth = "all";
 
 /* Init */
 function init() {
@@ -242,6 +307,8 @@ function init() {
     span.classList.add("active");
     render();
   });
+  window.addEventListener("scroll", updateMonthProgress, {passive: true});
+  window.addEventListener("resize", updateMonthProgress);
   render();
 }
 
@@ -254,27 +321,87 @@ function arxivNumeric(id) {
   return parseFloat(clean);
 }
 
+function dateNumeric(date) {
+  const match = date && date.match(/^20(\d{2})-(\d{2})-(\d{2})/);
+  if (!match) return -1;
+  return parseFloat(`${match[1]}${match[2]}`) * 100000 + parseFloat(match[3]);
+}
+
+function paperNumeric(p) {
+  const fromArxiv = arxivNumeric(p.arxivId);
+  if (fromArxiv !== -1) return fromArxiv;
+  return dateNumeric(p.date);
+}
+
+/* Derive month labels from arXiv ids, with optional manual dates for non-arXiv papers. */
+function paperMonth(p) {
+  if (p.date) return p.date.slice(0, 7);
+  if (!p.arxivId) return null;
+  const clean = p.arxivId.replace(/v\d+$/, "");
+  const match = clean.match(/^(\d{2})(\d{2})\./);
+  if (!match) return null;
+  const month = Number(match[2]);
+  if (month < 1 || month > 12) return null;
+  return `20${match[1]}-${match[2]}`;
+}
+
+function matchesFilters(p, includeMonth = true) {
+  if (activeTag !== "all" && !p.tags.includes(activeTag)) return false;
+  if (activeCategory !== "all" && !p.categories.includes(activeCategory)) return false;
+  if (searchQuery && !p.title.toLowerCase().includes(searchQuery)) return false;
+  if (includeMonth && activeMonth !== "all" && paperMonth(p) !== activeMonth) return false;
+  return true;
+}
+
+function getAvailableMonths() {
+  return [...new Set(papers.filter(p => matchesFilters(p, false)).map(paperMonth).filter(Boolean))]
+    .sort((a, b) => b.localeCompare(a));
+}
+
 /* Filter and sort papers */
 function getFiltered() {
-  let result = papers.filter(p => {
-    if (activeTag !== "all" && !p.tags.includes(activeTag)) return false;
-    if (activeCategory !== "all" && !p.categories.includes(activeCategory)) return false;
-    if (searchQuery && !p.title.toLowerCase().includes(searchQuery)) return false;
-    return true;
-  });
+  let result = papers.filter(p => matchesFilters(p));
   result.sort((a, b) => {
     if (activeCategory !== "all") {
       const aStar = a.tags.includes("star") ? 1 : 0;
       const bStar = b.tags.includes("star") ? 1 : 0;
       if (aStar !== bStar) return bStar - aStar;
     }
-    const na = arxivNumeric(a.arxivId), nb = arxivNumeric(b.arxivId);
+    const na = paperNumeric(a), nb = paperNumeric(b);
     if (na === -1 && nb === -1) return 0;
     if (na === -1) return 1;
     if (nb === -1) return -1;
     return nb - na;
   });
   return result;
+}
+
+function renderMonthRail() {
+  const rail = document.getElementById("monthRail");
+  if (!rail) return;
+  const months = getAvailableMonths();
+  rail.innerHTML = `
+    <div class="month-progress" aria-hidden="true"><span class="month-progress-fill" id="monthProgressFill"></span></div>
+    <div class="month-title">Month</div>
+    <button class="month-btn ${activeMonth === "all" ? "active" : ""}" data-month="all" type="button">All</button>
+    ${months.map(month => `<button class="month-btn ${activeMonth === month ? "active" : ""}" data-month="${month}" type="button">${month}</button>`).join("")}
+  `;
+  rail.querySelectorAll(".month-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const nextMonth = btn.dataset.month;
+      activeMonth = nextMonth === activeMonth ? "all" : nextMonth;
+      window.scrollTo({top: 0, behavior: "smooth"});
+      render();
+    });
+  });
+}
+
+function updateMonthProgress() {
+  const fill = document.getElementById("monthProgressFill");
+  if (!fill) return;
+  const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = maxScroll > 0 ? Math.min(1, Math.max(0, window.scrollY / maxScroll)) : 0;
+  fill.style.height = `${progress * 100}%`;
 }
 
 /* Render papers */
@@ -305,7 +432,10 @@ function render() {
       </div>`;
     }).join("");
   }
-  document.getElementById("statusBar").textContent = `Showing ${filtered.length} of ${papers.length} papers`;
+  const monthStatus = activeMonth === "all" ? "" : ` · Month ${activeMonth}`;
+  document.getElementById("statusBar").textContent = `Showing ${filtered.length} of ${papers.length} papers${monthStatus}`;
+  renderMonthRail();
+  updateMonthProgress();
 }
 
 function filterByCategory(cat) {

@@ -38,26 +38,25 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 
 ## 🔥 Recent Paper Updates
 
+[2026-06-16] ✅[EgoCS-400K: An Egocentric Gameplay Dataset for World Models](https://arxiv.org/abs/2606.18180)
+
+[2026-06-15] ✅[DreamX-World 1.0: A General-Purpose Interactive World Model](https://arxiv.org/abs/2606.16993)
+
+[2026-06-15] ✅[BadWorld: Adversarial Attacks on World Models](https://arxiv.org/abs/2606.16519)
+
+[2026-06-13] ❌️[GeoStream: Toward Precise Camera Controlled Streaming Video Generation](https://arxiv.org/abs/2606.15162)
+
+[2026-06-11] ❌️[MoVerse: Real-Time Video World Modeling with Panoramic Gaussian Scaffold](https://arxiv.org/abs/2606.13376)
+
+[2026-06-11] ❌️[TetherCache: Stabilizing Autoregressive Long-Form Video Generation with Gated Recall and Trusted Alignment](https://arxiv.org/abs/2606.13035)
+
+[2026-06-09] ✅[Next Forcing: Causal World Modeling with Multi-Chunk Prediction](https://arxiv.org/abs/2606.11187)
+
+[2026-06-09] ✅[WorldOlympiad: Can Your World Model Survive a Triathlon?](https://arxiv.org/abs/2606.11129)
+
 [2026-06-08] ✅[Prisma-World: Camera-Controllable Multi-Agent Video World Model](https://arxiv.org/abs/2606.09507)
 
 [2026-06-08] ✅[Latent Spatial Memory for Video World Models](https://arxiv.org/abs/2606.09828)
-
-[2026-06-05] ✅[Streaming Video Generation with Streaming Force Control](https://arxiv.org/abs/2606.07508)
-
-[2026-06-04] ✅[RhymeFlow: Training-Free Acceleration for Video Generation with Asynchronous Denoising Flow Scheduling](https://arxiv.org/abs/2606.06309)
-
-[2026-06-03] ✅[Echo-Infinity: Learning Evolving Memory for Real-Time Infinite Video Generation](https://arxiv.org/abs/2606.04527)
-
-[2026-06-02] ❌️[MetaWorld: Scaling Multi-Agent Video World Model from Single-view Video Data](https://arxiv.org/abs/2606.02753)
-
-**[2026-06-01] ✅🌟(Omnimodal world model for understanding, generation, simulation, and action)[Cosmos 3: Omnimodal World Models for Physical AI](https://research.nvidia.com/labs/cosmos-lab/cosmos3/technical-report.pdf)**
-
-
-[2026-06-01] ✅[Geometry-Aware Implicit Memory for Video World Models](https://arxiv.org/abs/2606.02436)
-
-[2026-05-31] ✅[Towards Interactive Video World Modeling: Frontiers, Challenges, Benchmarks, and Future Trends](https://arxiv.org/abs/2606.01164)
-
-[2026-05-29] ✅[Light Interaction: Training-Free Inference Acceleration for Interactive Video World Models](https://arxiv.org/abs/2605.31158)
 
 ---
 ## Overview
@@ -88,13 +87,19 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 
 **[2025-08] ✅🌟(First open-source real-time interactive World Model)[Matrix-game 2.0: An open-source real-time and streaming interactive world model](https://arxiv.org/abs/2508.13009)**
 
+[2026-06] ❌️[MoVerse: Real-Time Video World Modeling with Panoramic Gaussian Scaffold](https://arxiv.org/abs/2606.13376)
+
+[2026-06] ✅[Next Forcing: Causal World Modeling with Multi-Chunk Prediction](https://arxiv.org/abs/2606.11187)
+
+[2026-06] ✅[DreamX-World 1.0: A General-Purpose Interactive World Model](https://arxiv.org/abs/2606.16993)
+
+[2026-06] ❌️[GeoStream: Toward Precise Camera Controlled Streaming Video Generation](https://arxiv.org/abs/2606.15162)
+
 [2026-05] ✅[Light Interaction: Training-Free Inference Acceleration for Interactive Video World Models](https://arxiv.org/abs/2605.31158)
 
 [2026-05] ✅[SANA-WM: Efficient Minute-Scale World Modeling with Hybrid Linear Diffusion Transformer](https://arxiv.org/abs/2605.15178)
 
 [2026-05] ✅[Warp-as-History: Generalizable Camera-Controlled Video Generation from One Training Video](https://arxiv.org/abs/2605.15182)
-
-[2026-05] ✅[DreamX-World: A General-Purpose Interactive World Model](https://github.com/AMAP-ML/DreamX-World)
 
 [2026-04] ✅[Matrix-Game 3.0: Real-Time and Streaming Interactive World Model with Long-Horizon Memory](https://arxiv.org/abs/2604.08995)
 
@@ -142,6 +147,8 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 
 **[2026-02] ✅🌟(First Open Domain Memory & Action Benchmark)[MIND: Benchmarking Memory Consistency and Action Control in World Models](https://arxiv.org/abs/2602.08025)**
 
+[2026-06] ✅[WorldOlympiad: Can Your World Model Survive a Triathlon?](https://arxiv.org/abs/2606.11129)
+
 [2025-05] ✅[Toward Memory-Aided World Models: Benchmarking via Spatial Consistency](https://arxiv.org/abs/2505.22976)
 
 [2025-04] ✅[WorldScore: A Unified Evaluation Benchmark for World Generation](https://arxiv.org/abs/2504.00983)
@@ -152,6 +159,8 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 
 
 ## Dataset
+
+[2026-06] ✅ [EgoCS-400K: An Egocentric Gameplay Dataset for World Models](https://arxiv.org/abs/2606.18180)
 
 [2026-03] ✅ [WildWorld: A Large-Scale Dataset for Dynamic World Modeling with Actions and Explicit State toward Generative ARPG](https://arxiv.org/abs/2603.23497)
 
@@ -247,7 +256,11 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 
 **[2025-06] ❌️🌟(w/ Pose FOV overlap retrieval Memory)[Context as Memory: Scene-Consistent Interactive Long Video Generation with Memory Retrieval](https://arxiv.org/abs/2506.03141)**
 
+[2026-06] ❌️[TetherCache: Stabilizing Autoregressive Long-Form Video Generation with Gated Recall and Trusted Alignment](https://arxiv.org/abs/2606.13035)
+
 [2026-06] ✅[Latent Spatial Memory for Video World Models](https://arxiv.org/abs/2606.09828)
+
+[2026-06] ✅[Echo-Memory: A Controlled Study of Memory in Action World Models](https://arxiv.org/abs/2606.09803)
 
 [2026-06] ✅[Geometry-Aware Implicit Memory for Video World Models](https://arxiv.org/abs/2606.02436)
 
@@ -326,6 +339,8 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 [2026-03] ✅[RealWonder: Real-Time Physical Action-Conditioned Video Generation](https://arxiv.org/abs/2603.05449)
 
 ## Evaluation
+[2026-06] ✅[BadWorld: Adversarial Attacks on World Models](https://arxiv.org/abs/2606.16519)
+
 [2026-03] ✅[Interactive World Simulator for Robot Policy Training and Evaluation](https://arxiv.org/abs/2603.08546)
 
 ## Survey

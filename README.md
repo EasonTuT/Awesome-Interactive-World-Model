@@ -46,13 +46,13 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 
 [2026-07-07] ✅[RynnWorld-Teleop: An Action-Conditioned World Model for Digital Teleoperation](https://arxiv.org/abs/2607.06558)
 
-[2026-07-07] ❌️[AlayaWorld: Long-Horizon and Playable Video World Generation](https://arxiv.org/abs/2607.06291)
+[2026-07-07] ✅[AlayaWorld: Long-Horizon and Playable Video World Generation](https://arxiv.org/abs/2607.06291)
 
 [2026-07-07] ✅[MoWorld: A Flash World Model](https://arxiv.org/abs/2607.06216)
 
 [2026-07-06] ✅[Deform360: A Massive Multi-view Visuotactile Dataset for Deformable World Models](https://arxiv.org/abs/2607.05390)
 
-[2026-07-06] ❌️[Multiplayer Interactive World Models with Representation Autoencoders](https://arxiv.org/abs/2607.05352)
+[2026-07-06] ✅[Multiplayer Interactive World Models with Representation Autoencoders](https://arxiv.org/abs/2607.05352)
 
 [2026-07-05] ✅[Mask2Real-WM: Segmentation Masks as a Sim-to-Real Bridge for Controllable Dexterous World Models](https://arxiv.org/abs/2607.04546)
 
@@ -154,13 +154,13 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 
 ## Multi-Agent World Model
 
-[2026-07] ❌️[Multiplayer Interactive World Models with Representation Autoencoders](https://arxiv.org/abs/2607.05352)
+[2026-07] ✅[Multiplayer Interactive World Models with Representation Autoencoders](https://arxiv.org/abs/2607.05352)
 
 [2026-06] ✅[Prisma-World: Camera-Controllable Multi-Agent Video World Model](https://arxiv.org/abs/2606.09507)
 
 [2026-06] ❌️[MetaWorld: Scaling Multi-Agent Video World Model from Single-view Video Data](https://arxiv.org/abs/2606.02753)
 
-[2026-05] ❌️[Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players](https://arxiv.org/abs/2605.28816)
+[2026-05] ✅[Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players](https://arxiv.org/abs/2605.28816)
 
 [2026-04] ✅[MultiWorld: Scalable Multi-Agent Multi-View Video World Models](https://arxiv.org/abs/2604.18564)
 

@@ -1,6 +1,6 @@
 <div align="center">
 <h1>📜 Interactive World Model papers organized by core research challenges. </h1>
----
+
 
 <img src="data/title.png">
 

@@ -1,6 +1,6 @@
 <div align="center">
 <h1>📜 Interactive World Model papers organized by core research challenges. </h1>
-
+---
 
 <img src="data/title.png">
 
@@ -37,6 +37,30 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 ⭐ **[Ongoing] Support This Project** — If you find this useful, please [cite](#citation) our work and give us a star. Share with your research community!
 
 ## 🔥 Recent Paper Updates
+
+[2026-08-03] ✅[WorldExam: Benchmarking World Models from Apparent Appearance to Inherent Reactivity](https://arxiv.org/abs/2608.02603)
+
+[2026-08-02] ✅[MiniWorld: Democratizing the Training of Video World Models from Scratch](https://arxiv.org/abs/2608.01127)
+
+[2026-07-31] ✅[WM-Cov: Test Adequacy for Interactive World-Model-Style Autonomous Driving Simulation](https://arxiv.org/abs/2608.00298)
+
+[2026-07-31] ❌️[BWM: A Low-Cost High-Fidelity World Simulator for Robot Learning](https://arxiv.org/abs/2607.29302)
+
+[2026-07-30] ✅[PhiZero: A World Model Built Around Physical Language](https://arxiv.org/abs/2607.28624)
+
+[2026-07-30] ✅[ShadowDancer: Teaching Video World Models Any Action by Learning Unified Dynamics Representations from a Video and Its Shadow](https://arxiv.org/abs/2607.28362)
+
+[2026-07-29] ✅[StatePlay: State-Aware Game World Models for Mechanics-Consistent Generation](https://arxiv.org/abs/2607.26754)
+
+[2026-07-29] ✅[ContactFlow: A video action conditioning that transfers across embodiments](https://arxiv.org/abs/2607.26579)
+
+[2026-07-29] ❌️[CG-World: A Large-Scale World-State Dataset and Protocol for World Models](https://arxiv.org/abs/2607.26452)
+
+[2026-07-28] ✅[Wonder: Video World Model Done Better](https://arxiv.org/abs/2607.26037)
+
+[2026-07-23] ✅[Streaming Multi-Agent Autoregressive Diffusion Model with World State Registers](https://arxiv.org/abs/2607.21594)
+
+[2026-07-21] ✅[Generative World Renderer at the Speed of Play](https://arxiv.org/abs/2607.18703)
 
 [2026-07-15] ❌️[From Pixels to States: Rethinking Interactive World Models as Game Engines](https://arxiv.org/abs/2607.14076)
 
@@ -120,6 +144,18 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 
 **[2025-08] ✅🌟(First open-source real-time interactive World Model)[Matrix-game 2.0: An open-source real-time and streaming interactive world model](https://arxiv.org/abs/2508.13009)**
 
+[2026-08] ✅[MiniWorld: Democratizing the Training of Video World Models from Scratch](https://arxiv.org/abs/2608.01127)
+
+[2026-07] ❌️[BWM: A Low-Cost High-Fidelity World Simulator for Robot Learning](https://arxiv.org/abs/2607.29302)
+
+[2026-07] ✅[PhiZero: A World Model Built Around Physical Language](https://arxiv.org/abs/2607.28624)
+
+[2026-07] ✅[StatePlay: State-Aware Game World Models for Mechanics-Consistent Generation](https://arxiv.org/abs/2607.26754)
+
+[2026-07] ✅[Wonder: Video World Model Done Better](https://arxiv.org/abs/2607.26037)
+
+[2026-07] ✅[Generative World Renderer at the Speed of Play](https://arxiv.org/abs/2607.18703)
+
 [2026-07] ❌️[M⁴World: A Multi-view Multimodal Driving World Model for Interactive Object Manipulation and Minute-long Streaming](https://arxiv.org/abs/2607.14005)
 
 [2026-07] ❌️[Ego-Dynamics-Augmented World Model for Autonomous Driving with Zero-Shot Cross-Chassis Adaptation](https://arxiv.org/abs/2607.13410)
@@ -187,6 +223,8 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 
 ## Multi-Agent World Model
 
+[2026-07] ✅[Streaming Multi-Agent Autoregressive Diffusion Model with World State Registers](https://arxiv.org/abs/2607.21594)
+
 [2026-07] ✅[Multiplayer Interactive World Models with Representation Autoencoders](https://arxiv.org/abs/2607.05352)
 
 [2026-06] ✅[Prisma-World: Camera-Controllable Multi-Agent Video World Model](https://arxiv.org/abs/2606.09507)
@@ -204,6 +242,8 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 
 **[2026-02] ✅🌟(First Open Domain Memory & Action Benchmark)[MIND: Benchmarking Memory Consistency and Action Control in World Models](https://arxiv.org/abs/2602.08025)**
 
+[2026-08] ✅[WorldExam: Benchmarking World Models from Apparent Appearance to Inherent Reactivity](https://arxiv.org/abs/2608.02603)
+
 [2026-06] ❌️[WorldRoamBench: An Open-World Benchmark for Long-Horizon Stability of Interactive World Models](https://arxiv.org/abs/2606.31672)
 
 [2026-06] ✅[WorldOlympiad: Can Your World Model Survive a Triathlon?](https://arxiv.org/abs/2606.11129)
@@ -218,6 +258,8 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 
 
 ## Dataset
+
+[2026-07] ❌️ [CG-World: A Large-Scale World-State Dataset and Protocol for World Models](https://arxiv.org/abs/2607.26452)
 
 [2026-07] ✅ [Deform360: A Massive Multi-view Visuotactile Dataset for Deformable World Models](https://arxiv.org/abs/2607.05390)
 
@@ -371,7 +413,7 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 
 [2026-07] ✅[WorldDirector: Building Controllable World Simulators with Persistent Dynamic Memory](https://arxiv.org/abs/2607.02517)
 
-[2026-05] ❌️[Teaching Video Generators to Remember: Eliciting Dynamic Memory for Out-of-Sight State Evolution](https://arxiv.org/abs/2605.25333)
+[2026-05] ✅[Teaching Video Generators to Remember: Eliciting Dynamic Memory for Out-of-Sight State Evolution](https://arxiv.org/abs/2605.25333)
 
 [2026-03] ✅[Out of Sight but Not Out of Mind: Hybrid Memory for Dynamic Video World Models](https://arxiv.org/pdf/2603.25716)
 
@@ -382,6 +424,10 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 **[2025-03] ✅🌟(No longer limited to fixed controls)[AdaWorld: Learning Adaptable World Models with Latent Actions](https://arxiv.org/abs/2503.18938)**
 
 **[2025-01] ❌️🌟(Action control from games)[GameFactory: Creating New Games with Generative Interactive Videos](https://arxiv.org/abs/2501.08325)**
+
+[2026-07] ✅[ShadowDancer: Teaching Video World Models Any Action by Learning Unified Dynamics Representations from a Video and Its Shadow](https://arxiv.org/abs/2607.28362)
+
+[2026-07] ✅[ContactFlow: A video action conditioning that transfers across embodiments](https://arxiv.org/abs/2607.26579)
 
 
 
@@ -435,6 +481,8 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 [2026-03] ✅[RealWonder: Real-Time Physical Action-Conditioned Video Generation](https://arxiv.org/abs/2603.05449)
 
 ## Evaluation
+
+[2026-08] ✅[WM-Cov: Test Adequacy for Interactive World-Model-Style Autonomous Driving Simulation](https://arxiv.org/abs/2608.00298)
 
 [2026-07] ❌️[RoboWorld: Fast and Reliable Neural Simulators for Generalist Robot Policy Evaluation](https://arxiv.org/abs/2607.01060)
 

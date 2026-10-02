@@ -661,6 +661,8 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 [2026-07] ❌️[Worldscape-MoE: A Unified Mixture-of-Experts World Model for Scalable Heterogeneous Action Control](https://arxiv.org/abs/2607.03964)
 
 [2026-06] ✅[Streaming Video Generation with Streaming Force Control](https://arxiv.org/abs/2606.07508)
+[2026-06] ✅[MolmoMotion: Forecasting Point Trajectories in 3D with Language Instruction](https://arxiv.org/abs/2606.18558)
+
 
 [2026-05] ✅[E3C: Video Generation with 3D Environmental Memory and Ego-Exo Human Pose Control](https://arxiv.org/abs/2605.26316)
 

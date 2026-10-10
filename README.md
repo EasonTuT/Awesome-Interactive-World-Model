@@ -38,204 +38,71 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 
 ## 🔥 Recent Paper Updates
 
-[2026-09-11] ✅[CLAP: Cross-Embodiment Video World Models are Zero-Shot Physical Simulators](https://arxiv.org/abs/2608.27406)
+[2026-10-08] ✅[WorldCast: Distributed Multiplayer World Models](https://arxiv.org/abs/2610.12412)
 
-[2026-09-10] ✅[Pelican-Sim 1.0: A General World Model Simulator for Embodied Intelligence](https://arxiv.org/abs/2609.12036)
+[2026-10-08] ❌️[Multi-Agent Egocentric World Model with Fine-Grained Embodied Interaction](https://arxiv.org/abs/2610.12299)
 
-[2026-09-10] ✅[World in World: Explore the World with World Models](https://arxiv.org/abs/2609.11548)
+[2026-10-08] ❌️[MultiWorldBench: Do Independently Controlled Views Describe One Shared World?](https://arxiv.org/abs/2610.11723)
 
-[2026-09-09] ✅[Programmable World Model](https://arxiv.org/abs/2609.10540)
+[2026-10-08] ✅[Learning to Retrieve: Internalizing Memory Retrieval for Video World Models](https://arxiv.org/abs/2610.11444)
 
-[2026-09-08] ✅[ActionSplice: In-Flight Action Editing for Interactive World Models](https://arxiv.org/abs/2609.08230)
+[2026-10-06] ✅[CtrlCache: Accelerating Interactive Video World Models with Control-Aware Caching](https://arxiv.org/abs/2610.08777)
 
-[2026-09-07] ❌️[TourPhysics: Bringing Physics to World Models for Exploration and Manipulation from a Single Image](https://arxiv.org/abs/2609.04911)
+[2026-10-05] ✅[HLA-WM: Hybrid Linear Attention for Long-Horizon Video World Models](https://arxiv.org/abs/2610.05739)
 
-[2026-09-05] ✅[PhysWeep: Does a Video Generator Realize the Physics You Ask For?](https://arxiv.org/abs/2609.06207)
+[2026-10-02] ✅[Kepler4D: Controllable Future Video Generation via 4D Scene State Evolution](https://arxiv.org/abs/2610.04152)
 
-[2026-09-03] ✅[Puffin-World: Scaling a Unified Multimodal Model with Native 3D World States](https://arxiv.org/abs/2609.04196)
+[2026-10-02] ❌️[SymRegFlow: Symmetry-Regularized Flow Matching for Video World Models](https://arxiv.org/abs/2610.02726)
 
-[2026-09-03] ✅[WorldReward: Reward Modeling for Camera-Conditioned World Models](https://arxiv.org/abs/2609.03952)
+[2026-10-02] ❌️[DeltaWorld: Physically Consistent Interactive World Simulators via Action-Conditioned Latent Increment Learning](https://arxiv.org/abs/2610.02691)
 
-[2026-09-03] ✅[OctWorld: Long-Range World-Consistent Video Generation with Octree-Based 3D Mapping](https://arxiv.org/abs/2609.03919)
+[2026-10-01] ❌️[World Observer: Joint Actor-Observer Generation for Persistent World Modeling](https://arxiv.org/abs/2610.02162)
 
-[2026-09-03] ❌️[Building Pretraining Data for World Models: An Unreal Engine-Based Pipeline for Action-Conditioned Video Generation](https://arxiv.org/abs/2609.03557)
+[2026-10-01] ✅[4Director: Controlling Video World Models with Rigid 3D Geometry](https://arxiv.org/abs/2610.02160)
 
-[2026-09-03] ✅[PAWBench: How Far Are We from Probabilistically Aligned World Modeling?](https://arxiv.org/abs/2608.27345)
+[2026-10-01] ✅[Oneira: From Open-Ended Generation to Open-World Interaction in Video World Models](https://arxiv.org/abs/2610.01614)
 
-[2026-09-02] ✅[SolarWM: Open Data and Scalable Training for Long-Horizon Video World Models](https://arxiv.org/abs/2609.02886)
+[2026-09-30] ✅[LOCI: Spatial Linear Memory for Streaming World Models](https://arxiv.org/abs/2609.40222)
 
-[2026-09-01] ✅[H3-World: Turning Language Understanding into World Control](https://arxiv.org/abs/2609.01560)
+[2026-09-29] ❌️[HelixWorld: A Real-time Interactive Audio-Visual World Model](https://arxiv.org/abs/2609.38123)
 
-[2026-09-01] ✅[MeRoPE: Metric Rotary Position Embedding for Camera-Controlled Video Generation](https://arxiv.org/abs/2609.01252)
+[2026-09-29] ✅[MUGEN: Interactive Panoramic World Exploration via Camera Control](https://arxiv.org/abs/2609.38077)
 
-[2026-09-01] ✅[AnyWorld: Factorized Egocentric World Models for Cross-Embodiment Generalization](https://arxiv.org/abs/2608.29242)
+[2026-09-29] ❌️[Waypoint-1.5: A Real-Time Video World Model for Consumer Hardware](https://arxiv.org/abs/2609.37107)
 
-[2026-08-31] ✅[CAER: Causal Action Effect Reweighting for World Model Training](https://arxiv.org/abs/2608.30897)
+[2026-09-29] ❌️[MeteoVerse: Unified Weather-Controllable Video World Model](https://arxiv.org/abs/2609.36810)
 
-[2026-08-31] ✅[Can Video World Models Track Unobserved World States?](https://arxiv.org/abs/2608.30692)
+[2026-09-28] ✅[WorldPlay2: Extending Real-Time Interactive World Models in Control and Horizon](https://arxiv.org/abs/2609.35560)
 
-[2026-08-30] ✅[Matrix-Game 3.5: Enhancing Real-Time Streaming Interactive World Models with Patch Memory](https://arxiv.org/abs/2608.29910)
+[2026-09-28] ❌️[OPIS: An Input-Grounded Benchmark for Multi-Object Memory in Video World Models](https://arxiv.org/abs/2609.35052)
 
-[2026-08-28] ❌️[RoboPhys-3D: A Comprehensive Embodied World Model Evaluation via 3D Reconstruction](https://arxiv.org/abs/2608.28718)
+[2026-09-28] ✅[Geometry as Address: Routing Attention to Visual Memory for Long-Horizon Camera-Controlled Video Generation](https://arxiv.org/abs/2609.34722)
 
-[2026-08-28] ✅[Manifold4D: Denoising on Point Cloud Rendered Manifolds for Video Re-shooting](https://arxiv.org/abs/2608.28174)
+[2026-09-28] ✅[WorldAttention: An Efficient Attention Architecture for Interactive Video World Models](https://arxiv.org/abs/2609.34606)
 
-[2026-08-27] ✅[R2M-Bench: Evaluating Revisit Memory via Relative Consistency in Interactive Video World Models](https://arxiv.org/abs/2608.27328)
+[2026-09-28] ✅[Precise Editing and Flexible Referencing for Interactable Worlds](https://arxiv.org/abs/2609.34470)
 
-[2026-08-27] ✅[4DStreamCtrl: Interactive Video Generation with Online 4D Control](https://arxiv.org/abs/2608.25479)
+[2026-09-28] ✅[CAST: Reconstruction-Coupled Acceleration of Interactive World Models](https://arxiv.org/abs/2609.34144)
 
-[2026-08-27] ✅[NVIDIA Cosmos-H-Dreams: Real-Time Generative Physics Simulation for Surgical Robotics](https://arxiv.org/abs/2608.24199)
+[2026-09-27] ❌️[WorldAgent: Verification-Guided Agentic Physical World Construction](https://arxiv.org/abs/2609.33208)
 
-[2026-08-27] ✅[BehaviorWorldGen: Closing the Loop between Action Models and World Simulators via Controllable Behavior-Aware Structured World Generation](https://arxiv.org/abs/2608.22187)
+[2026-09-25] ❌️[OneWorld: Learning Consistent Physics Across Actions in World Models](https://arxiv.org/abs/2609.30946)
 
-[2026-08-26] ❌️[StreamAV-Bench: A Comprehensive Benchmark for Streaming Audio-Video Generation](https://arxiv.org/abs/2608.26336)
+[2026-09-22] ✅[Code Plans, Diffusion Renders: Open-Ended Generative World Modeling](https://arxiv.org/abs/2609.26458)
 
-[2026-08-26] ❌️[WALL-SS: Scaling Long-horizon World Models via Next-Scale Autoregression](https://arxiv.org/abs/2608.26239)
+[2026-09-22] ✅[GameDirector: Decoupling Gameplay Logic from Rendering for Player-Configurable Game World Models](https://arxiv.org/abs/2609.25652)
 
-[2026-08-25] ✅[Do Robotic World Models Really Follow Actions? Diagnosing and Aligning Action-Conditioned Generation for Policy Learning](https://arxiv.org/abs/2608.24885)
+[2026-09-21] ✅[WorldCrafter: Consistent Video World Model with Implicit 3D-aware Memory](https://arxiv.org/abs/2609.24984)
 
-[2026-08-25] ✅[Long-Horizon Audio-Visual Generation for Persistent Stories and Interactive Worlds](https://arxiv.org/abs/2608.23383)
+[2026-09-21] ❌️[HappyWorld-Bench](https://arxiv.org/abs/2609.24308)
 
-[2026-08-24] ✅[ReWorld: An Interactive World Model with Long-Horizon Memory](https://arxiv.org/abs/2608.23565)
+[2026-09-18] ❌️[ConsistWorld: Evidence Routing for Consistent Multi-Agent World Models](https://arxiv.org/abs/2609.22641)
 
-[2026-08-24] ❌️[EchoWM: Open and Enterable Omnimodal World Models](https://arxiv.org/abs/2608.23189)
+[2026-09-17] ✅[Astronex-World 1.0: Real-Time Interactive World Model Foundation](https://arxiv.org/abs/2609.20034)
 
-[2026-08-24] ✅[Population-Scalable Multi-Agent World Modeling](https://arxiv.org/abs/2608.08600)
+[2026-09-15] ✅[Zing-0.5: Toward Playable Worlds with Real-Time Joint Action and Text Control](https://arxiv.org/abs/2609.17909)
 
-[2026-08-23] ❌️[Where World Models Break: Natural-Input Failure Discovery](https://arxiv.org/abs/2608.22421)
-
-[2026-08-19] ✅[WorldRover: A Scalable Synthetic Video Data Engine for World Exploration with Rich Annotations](https://arxiv.org/abs/2608.15659)
-
-[2026-08-19] ❌️[CamWorldQA: Perceptual Quality Assessment of Camera-Controlled World Video Generation](https://arxiv.org/abs/2608.18710)
-
-[2026-08-18] ✅[WorldMind: Decoupled Game World Model for State-Aware NPC Behavior](https://arxiv.org/abs/2608.21439)
-
-[2026-08-18] ✅[Hydra-0: Action Flow for Generalist World Modeling and Control](https://arxiv.org/abs/2608.18077)
-
-[2026-08-18] ❌️[Alaya-EVOKE: From Linear-Scaling Supervision to Endless World](https://arxiv.org/abs/2608.13546)
-
-[2026-08-17] ❌️[GaussianDWM++: Language-Grounded 3D Gaussian Driving World Model for Unified Scene Understanding, Editing, and Multi-Modal Generation](https://arxiv.org/abs/2608.16234)
-
-[2026-08-15] ✅[SCOPE: Score-Isolated Agentic Optimization for Video World Models](https://arxiv.org/abs/2608.15043)
-
-[2026-08-14] ✅[Marionette: Predicting World States, Rendering Geometry, Painting Appearance](https://arxiv.org/abs/2608.14530)
-
-[2026-08-14] ✅[ForgeWM: Progressive Causal Training for Few-Step Action-Conditioned Video World Models](https://arxiv.org/abs/2608.14022)
-
-[2026-08-14] ✅[PlayWorld: Benchmarking World Models with Agent Players over Long-Horizon Objectives](https://arxiv.org/abs/2608.13552)
-
-[2026-08-13] ✅[DreamX-Phi 1.0: Action-Conditioned Video World Model for Robotic Manipulation](https://arxiv.org/abs/2608.13489)
-
-[2026-08-13] ✅[H2R-Bench: Benchmarking Human-to-Robot Manipulation Video Generation in World Models](https://arxiv.org/abs/2608.13049)
-
-[2026-08-12] ❌️[How Can Driving World Models Do Counterfactual Prediction?](https://arxiv.org/abs/2608.11601)
-
-[2026-08-11] ✅[Sekai2: From World Exploration to Interactive World Modeling](https://arxiv.org/abs/2608.09449)
-
-[2026-08-10] ✅[RealWeather: Realistic and Scene-Faithful Weather Translation with Driving World Models](https://arxiv.org/abs/2608.02953)
-
-[2026-08-10] ✅[WorldSimProbe: Diagnosing Simulator Faithfulness in Action-Conditioned World Models for Embodied Manipulation](https://arxiv.org/abs/2608.09298)
-
-[2026-08-10] ❌️[Twin Rollouts: Noise-Coupled Counterfactual Branching in Interactive Video World Models](https://arxiv.org/abs/2608.08982)
-
-[2026-08-10] ✅[MASS: Multiplayer World Models with Authoritative Shared State](https://arxiv.org/abs/2608.06257)
-
-[2026-08-08] ✅[Distilling Physical Priors into Streaming World Models](https://arxiv.org/abs/2608.07981)
-
-[2026-08-07] ✅[Addressable Memory for Video World Models](https://arxiv.org/abs/2608.07408)
-
-[2026-08-07] ❌️[Surg-UniWorld: A Unified Surgical World Model with Multimodal Control Experts](https://arxiv.org/abs/2608.06770)
-
-[2026-08-06] ✅[GeniWorld: A Generalizable Interactive World Model for Robotic Manipulation via Visual Actions](https://arxiv.org/abs/2608.06332)
-
-[2026-08-05] ✅[HelloWorld: Enabling Socially Interactive Characters in Video World Models](https://arxiv.org/abs/2608.05070)
-
-[2026-08-05] ❌️[muSync-GS: Physics-Synchronized Driving Video Synthesis for Weather and Geometric Road Hazards](https://arxiv.org/abs/2608.04412)
-
-[2026-08-05] ✅[WorldCycle: Self-Verifiable Reinforcement Learning for Long-Horizon Video World Models](https://arxiv.org/abs/2608.04964)
-
-[2026-08-05] ❌️[Overcoming Statistical Bias in Action-Controllable World Models](https://arxiv.org/abs/2608.04653)
-
-[2026-08-04] ✅[EmbodiedVAE: Disentangled Video VAE for Efficient and Controllable Embodied Manipulation](https://arxiv.org/abs/2608.02990)
-
-[2026-08-04] ❌️[Video Models as Native 4D Renderers: World-Grounded Conditioning from Animated Mesh](https://arxiv.org/abs/2608.00094)
-
-[2026-08-03] ✅[WorldExam: Benchmarking World Models from Apparent Appearance to Inherent Reactivity](https://arxiv.org/abs/2608.02603)
-
-[2026-08-02] ✅[MiniWorld: Democratizing the Training of Video World Models from Scratch](https://arxiv.org/abs/2608.01127)
-
-[2026-07-31] ✅[WM-Cov: Test Adequacy for Interactive World-Model-Style Autonomous Driving Simulation](https://arxiv.org/abs/2608.00298)
-
-[2026-07-31] ❌️[BWM: A Low-Cost High-Fidelity World Simulator for Robot Learning](https://arxiv.org/abs/2607.29302)
-
-[2026-07-30] ✅[PhiZero: A World Model Built Around Physical Language](https://arxiv.org/abs/2607.28624)
-
-[2026-07-30] ✅[ShadowDancer: Teaching Video World Models Any Action by Learning Unified Dynamics Representations from a Video and Its Shadow](https://arxiv.org/abs/2607.28362)
-
-[2026-07-29] ✅[StatePlay: State-Aware Game World Models for Mechanics-Consistent Generation](https://arxiv.org/abs/2607.26754)
-
-[2026-07-29] ✅[ContactFlow: A video action conditioning that transfers across embodiments](https://arxiv.org/abs/2607.26579)
-
-[2026-07-29] ❌️[CG-World: A Large-Scale World-State Dataset and Protocol for World Models](https://arxiv.org/abs/2607.26452)
-
-[2026-07-28] ✅[Wonder: Video World Model Done Better](https://arxiv.org/abs/2607.26037)
-
-[2026-07-23] ✅[Streaming Multi-Agent Autoregressive Diffusion Model with World State Registers](https://arxiv.org/abs/2607.21594)
-
-[2026-07-21] ✅[Generative World Renderer at the Speed of Play](https://arxiv.org/abs/2607.18703)
-
-[2026-07-15] ❌️[From Pixels to States: Rethinking Interactive World Models as Game Engines](https://arxiv.org/abs/2607.14076)
-
-[2026-07-15] ❌️[M⁴World: A Multi-view Multimodal Driving World Model for Interactive Object Manipulation and Minute-long Streaming](https://arxiv.org/abs/2607.14005)
-
-
-[2026-07-15] ❌️[Ego-Dynamics-Augmented World Model for Autonomous Driving with Zero-Shot Cross-Chassis Adaptation](https://arxiv.org/abs/2607.13410)
-
-
-[2026-07-13] ❌️[Cycle-World: Mitigating Error Accumulation in Long-term Video World Models via Reverse-Prediction Cycle Consistency](https://arxiv.org/abs/2607.11836)
-
-
-[2026-07-13] ✅[ABot-3DWorld 0: A Universal World Model to Explore Any 3D Space](https://arxiv.org/abs/2607.11673)
-
-[2026-07-13] ✅[Xiaomi-Robotics-U0: Unified Embodied Synthesis with World Foundation Model](https://arxiv.org/abs/2607.11643)
-
-
-[2026-07-12] ❌️[LIDAR-AD: A Decoder-Free Latent-Interaction Dreamer with Action-Residual Chains for Autonomous Driving](https://arxiv.org/abs/2607.11964)
-
-[2026-07-12] ❌️[Is Energy Guidance All You Need? Training-Free Norm Injection for Driving World Models](https://arxiv.org/abs/2607.10781)
-
-[2026-07-12] ❌️[World Models as Adversaries: Multi-Agent Self-Play Fine-Tuning for Robust Motion Planning](https://arxiv.org/abs/2607.10630)
-
-[2026-07-11] ❌️[Stateful Worlds, Stateless Elasticity: Exact-State Serving for Interactive World Models](https://arxiv.org/abs/2607.10389)
-
-[2026-07-10] ✅[PanoWorld: Real-World Panoramic Generation](https://arxiv.org/abs/2607.09661)
-
-[2026-07-10] ❌️[Causally Debiased Latent Action Model for Embodied Action Conditioned World Models](https://arxiv.org/abs/2607.09185)
-
-[2026-07-08] ✅[Infinite Worlds with Versatile Interactions](https://arxiv.org/abs/2607.07534)
-
-[2026-07-07] ✅[RynnWorld-Teleop: An Action-Conditioned World Model for Digital Teleoperation](https://arxiv.org/abs/2607.06558)
-
-[2026-07-07] ✅[AlayaWorld: Long-Horizon and Playable Video World Generation](https://arxiv.org/abs/2607.06291)
-
-[2026-07-07] ✅[MoWorld: A Flash World Model](https://arxiv.org/abs/2607.06216)
-
-[2026-07-06] ✅[Deform360: A Massive Multi-view Visuotactile Dataset for Deformable World Models](https://arxiv.org/abs/2607.05390)
-
-[2026-07-06] ✅[Multiplayer Interactive World Models with Representation Autoencoders](https://arxiv.org/abs/2607.05352)
-
-[2026-07-05] ✅[Mask2Real-WM: Segmentation Masks as a Sim-to-Real Bridge for Controllable Dexterous World Models](https://arxiv.org/abs/2607.04546)
-
-[2026-07-04] ❌️[Worldscape-MoE: A Unified Mixture-of-Experts World Model for Scalable Heterogeneous Action Control](https://arxiv.org/abs/2607.03964)
-
-[2026-07-03] ✅[Vidu S1: A Real-Time Interactive Video Generation Model](https://arxiv.org/abs/2607.03118)
-
-[2026-07-02] ✅[WorldDirector: Building Controllable World Simulators with Persistent Dynamic Memory](https://arxiv.org/abs/2607.02517)
-
-[2026-07-02] ✅[PhysMani: Physics-principled 3D World Model for Dynamic Object Manipulation](https://arxiv.org/abs/2607.01938)
-
-[2026-07-01] ❌️[RoboWorld: Fast and Reliable Neural Simulators for Generalist Robot Policy Evaluation](https://arxiv.org/abs/2607.01060)
-
+[2026-09-13] ✅[AlayaVista: Streaming World Modeling from Panoramic States to Perspective Video](https://arxiv.org/abs/2609.14462)
 
 ---
 ## Overview
@@ -248,6 +115,7 @@ _Major updates and announcements are shown below. Scroll for full timeline._
   - 🧠 [Memory Consistency](#memory-consistency)
   - 🎮 [Action Control](#action-control)
   - 🖱️ [Interactive](#interactive)
+  - 💻 [Code4Gen](#code4gen)
   - 🔧 [Post-Training](#post-training)
   - ⚙️ [Physics](#physics)
   - 📏 [Evaluation](#evaluation)
@@ -363,6 +231,12 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 
 ## Multi-Agent World Model
 
+[2026-10] ✅[WorldCast: Distributed Multiplayer World Models](https://arxiv.org/abs/2610.12412)
+
+[2026-10] ❌️[Multi-Agent Egocentric World Model with Fine-Grained Embodied Interaction](https://arxiv.org/abs/2610.12299)
+
+[2026-09] ❌️[ConsistWorld: Evidence Routing for Consistent Multi-Agent World Models](https://arxiv.org/abs/2609.22641)
+
 [2026-08] ✅[BehaviorWorldGen: Closing the Loop between Action Models and World Simulators via Controllable Behavior-Aware Structured World Generation](https://arxiv.org/abs/2608.22187)
 
 [2026-08] ✅[Population-Scalable Multi-Agent World Modeling](https://arxiv.org/abs/2608.08600)
@@ -387,6 +261,12 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 **[2026-05] ✅🌟(Multi-turn interactive world model evaluation)[WBench: A Comprehensive Multi-turn Benchmark for Interactive Video World Model Evaluation](https://arxiv.org/abs/2605.25874)**
 
 **[2026-02] ✅🌟(First Open Domain Memory & Action Benchmark)[MIND: Benchmarking Memory Consistency and Action Control in World Models](https://arxiv.org/abs/2602.08025)**
+
+[2026-10] ❌️[MultiWorldBench: Do Independently Controlled Views Describe One Shared World?](https://arxiv.org/abs/2610.11723)
+
+[2026-09] ❌️[OPIS: An Input-Grounded Benchmark for Multi-Object Memory in Video World Models](https://arxiv.org/abs/2609.35052)
+
+[2026-09] ❌️[HappyWorld-Bench](https://arxiv.org/abs/2609.24308)
 
 [2026-09] ✅[PhysWeep: Does a Video Generator Realize the Physics You Ask For?](https://arxiv.org/abs/2609.06207)
 
@@ -422,6 +302,8 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 
 
 ## Dataset
+
+[2026-09] ✅ [MUGEN: Interactive Panoramic World Exploration via Camera Control](https://arxiv.org/abs/2609.38077)
 
 [2026-09] ❌️ [Building Pretraining Data for World Models: An Unreal Engine-Based Pipeline for Action-Conditioned Video Generation](https://arxiv.org/abs/2609.03557)
 
@@ -539,6 +421,18 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 
 **[2025-06] ❌️🌟(w/ Pose FOV overlap retrieval Memory)[Context as Memory: Scene-Consistent Interactive Long Video Generation with Memory Retrieval](https://arxiv.org/abs/2506.03141)**
 
+[2026-10] ✅[Learning to Retrieve: Internalizing Memory Retrieval for Video World Models](https://arxiv.org/abs/2610.11444)
+
+[2026-10] ✅[HLA-WM: Hybrid Linear Attention for Long-Horizon Video World Models](https://arxiv.org/abs/2610.05739)
+
+[2026-09] ✅[LOCI: Spatial Linear Memory for Streaming World Models](https://arxiv.org/abs/2609.40222)
+
+[2026-09] ✅[Geometry as Address: Routing Attention to Visual Memory for Long-Horizon Camera-Controlled Video Generation](https://arxiv.org/abs/2609.34722)
+
+[2026-09] ✅[WorldCrafter: Consistent Video World Model with Implicit 3D-aware Memory](https://arxiv.org/abs/2609.24984)
+
+[2026-09] ✅[AlayaVista: Streaming World Modeling from Panoramic States to Perspective Video](https://arxiv.org/abs/2609.14462)
+
 [2026-09] ✅[OctWorld: Long-Range World-Consistent Video Generation with Octree-Based 3D Mapping](https://arxiv.org/abs/2609.03919)
 
 [2026-08] ✅[Matrix-Game 3.5: Enhancing Real-Time Streaming Interactive World Models with Patch Memory](https://arxiv.org/abs/2608.29910)
@@ -595,6 +489,8 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 
 **[2026-01] ✅🌟(First out-of-view Dynamic Memory)[Flow Equivariant World Models: Structured Dynamics Outside the Field of View](https://arxiv.org/abs/2601.01075)**
 
+[2026-10] ❌️[World Observer: Joint Actor-Observer Generation for Persistent World Modeling](https://arxiv.org/abs/2610.02162)
+
 [2026-07] ✅[WorldDirector: Building Controllable World Simulators with Persistent Dynamic Memory](https://arxiv.org/abs/2607.02517)
 
 [2026-05] ✅[Teaching Video Generators to Remember: Eliciting Dynamic Memory for Out-of-Sight State Evolution](https://arxiv.org/abs/2605.25333)
@@ -608,6 +504,14 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 **[2025-03] ✅🌟(No longer limited to fixed controls)[AdaWorld: Learning Adaptable World Models with Latent Actions](https://arxiv.org/abs/2503.18938)**
 
 **[2025-01] ❌️🌟(Action control from games)[GameFactory: Creating New Games with Generative Interactive Videos](https://arxiv.org/abs/2501.08325)**
+
+[2026-10] ✅[Kepler4D: Controllable Future Video Generation via 4D Scene State Evolution](https://arxiv.org/abs/2610.04152)
+
+[2026-10] ❌️[SymRegFlow: Symmetry-Regularized Flow Matching for Video World Models](https://arxiv.org/abs/2610.02726)
+
+[2026-10] ✅[4Director: Controlling Video World Models with Rigid 3D Geometry](https://arxiv.org/abs/2610.02160)
+
+[2026-09] ❌️[MeteoVerse: Unified Weather-Controllable Video World Model](https://arxiv.org/abs/2609.36810)
 
 [2026-09] ✅[World in World: Explore the World with World Models](https://arxiv.org/abs/2609.11548)
 
@@ -661,8 +565,6 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 [2026-07] ❌️[Worldscape-MoE: A Unified Mixture-of-Experts World Model for Scalable Heterogeneous Action Control](https://arxiv.org/abs/2607.03964)
 
 [2026-06] ✅[Streaming Video Generation with Streaming Force Control](https://arxiv.org/abs/2606.07508)
-[2026-06] ✅[MolmoMotion: Forecasting Point Trajectories in 3D with Language Instruction](https://arxiv.org/abs/2606.18558)
-
 
 [2026-05] ✅[E3C: Video Generation with 3D Environmental Memory and Ego-Exo Human Pose Control](https://arxiv.org/abs/2605.26316)
 
@@ -676,6 +578,30 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 
 **[2025-11] ❌️🌟(Text interaction: spawn weapons, affect environment)[Hunyuan-GameCraft-2: Instruction-following Interactive Game World Model](https://arxiv.org/abs/2511.23429)**
 
+[2026-10] ✅[CtrlCache: Accelerating Interactive Video World Models with Control-Aware Caching](https://arxiv.org/abs/2610.08777)
+
+[2026-10] ✅[Oneira: From Open-Ended Generation to Open-World Interaction in Video World Models](https://arxiv.org/abs/2610.01614)
+
+[2026-09] ❌️[HelixWorld: A Real-time Interactive Audio-Visual World Model](https://arxiv.org/abs/2609.38123)
+
+[2026-09] ❌️[Waypoint-1.5: A Real-Time Video World Model for Consumer Hardware](https://arxiv.org/abs/2609.37107)
+
+[2026-09] ✅[WorldPlay2: Extending Real-Time Interactive World Models in Control and Horizon](https://arxiv.org/abs/2609.35560)
+
+[2026-09] ✅[WorldAttention: An Efficient Attention Architecture for Interactive Video World Models](https://arxiv.org/abs/2609.34606)
+
+[2026-09] ✅[Precise Editing and Flexible Referencing for Interactable Worlds](https://arxiv.org/abs/2609.34470)
+
+[2026-09] ✅[CAST: Reconstruction-Coupled Acceleration of Interactive World Models](https://arxiv.org/abs/2609.34144)
+
+[2026-09] ✅[Code Plans, Diffusion Renders: Open-Ended Generative World Modeling](https://arxiv.org/abs/2609.26458)
+
+[2026-09] ✅[GameDirector: Decoupling Gameplay Logic from Rendering for Player-Configurable Game World Models](https://arxiv.org/abs/2609.25652)
+
+[2026-09] ✅[Astronex-World 1.0: Real-Time Interactive World Model Foundation](https://arxiv.org/abs/2609.20034)
+
+[2026-09] ✅[Zing-0.5: Toward Playable Worlds with Real-Time Joint Action and Text Control](https://arxiv.org/abs/2609.17909)
+
 [2026-09] ✅[Programmable World Model](https://arxiv.org/abs/2609.10540)
 
 [2026-08] ✅[HelloWorld: Enabling Socially Interactive Characters in Video World Models](https://arxiv.org/abs/2608.05070)
@@ -684,6 +610,23 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 
 [2026-07] ✅[Vidu S1: A Real-Time Interactive Video Generation Model](https://arxiv.org/abs/2607.03118)
 
+
+
+## Code4Gen
+
+[2026-09] ❌️[WorldAgent: Verification-Guided Agentic Physical World Construction](https://arxiv.org/abs/2609.33208)
+
+[2026-08] ✅[Code as Worlds: Agentic Discovery of Executable World Representations for Physical Reasoning](https://arxiv.org/abs/2608.27549)
+
+[2026-07] ✅[GS-Agent: Creating 4D Physical Worlds With Generative Simulation](https://arxiv.org/abs/2607.21522)
+
+[2026-07] ✅[SimWorlds: A Multi-Agent System for Dynamic 3D Scene Creation](https://arxiv.org/abs/2607.01766)
+
+[2026-05] ✅[SceneCode: Executable World Programs for Editable Indoor Scenes with Articulated Objects](https://arxiv.org/abs/2605.19587)
+
+[2026-02] ❌️[PhyScensis: Physics-Augmented LLM Agents for Complex Physical Scene Arrangement](https://arxiv.org/abs/2602.14968)
+
+[2026-02] ✅[Code2Worlds: Empowering Coding LLMs for 4D World Generation](https://arxiv.org/abs/2602.11757)
 
 
 ## Post-Training
@@ -703,6 +646,10 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 
 
 ## Physics
+
+[2026-10] ❌️[DeltaWorld: Physically Consistent Interactive World Simulators via Action-Conditioned Latent Increment Learning](https://arxiv.org/abs/2610.02691)
+
+[2026-09] ❌️[OneWorld: Learning Consistent Physics Across Actions in World Models](https://arxiv.org/abs/2609.30946)
 
 [2026-09] ❌️[TourPhysics: Bringing Physics to World Models for Exploration and Manipulation from a Single Image](https://arxiv.org/abs/2609.04911)
 

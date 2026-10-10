@@ -194,6 +194,45 @@ header p { color: #64748b; font-size: 0.95rem; max-width: 600px; margin: 0 auto;
 <nav class="month-rail" id="monthRail" aria-label="Paper month navigation"></nav>
 <script>
 const papers = [
+  {title:"WorldCast: Distributed Multiplayer World Models",url:"https://arxiv.org/abs/2610.12412",categories:["Multi-Agent World Model"],tags:["opensource"],description:"",arxivId:"2610.12412"},
+  {title:"Multi-Agent Egocentric World Model with Fine-Grained Embodied Interaction",url:"https://arxiv.org/abs/2610.12299",categories:["Multi-Agent World Model"],tags:["closed"],description:"",arxivId:"2610.12299"},
+  {title:"MultiWorldBench: Do Independently Controlled Views Describe One Shared World?",url:"https://arxiv.org/abs/2610.11723",categories:["Benchmark"],tags:["closed"],description:"",arxivId:"2610.11723"},
+  {title:"Learning to Retrieve: Internalizing Memory Retrieval for Video World Models",url:"https://arxiv.org/abs/2610.11444",categories:["Static Memory"],tags:["opensource"],description:"",arxivId:"2610.11444"},
+  {title:"CtrlCache: Accelerating Interactive Video World Models with Control-Aware Caching",url:"https://arxiv.org/abs/2610.08777",categories:["Interactive"],tags:["opensource"],description:"",arxivId:"2610.08777"},
+  {title:"HLA-WM: Hybrid Linear Attention for Long-Horizon Video World Models",url:"https://arxiv.org/abs/2610.05739",categories:["Static Memory"],tags:["opensource"],description:"",arxivId:"2610.05739"},
+  {title:"Kepler4D: Controllable Future Video Generation via 4D Scene State Evolution",url:"https://arxiv.org/abs/2610.04152",categories:["Action Control"],tags:["opensource"],description:"",arxivId:"2610.04152"},
+  {title:"SymRegFlow: Symmetry-Regularized Flow Matching for Video World Models",url:"https://arxiv.org/abs/2610.02726",categories:["Action Control"],tags:["closed"],description:"",arxivId:"2610.02726"},
+  {title:"DeltaWorld: Physically Consistent Interactive World Simulators via Action-Conditioned Latent Increment Learning",url:"https://arxiv.org/abs/2610.02691",categories:["Physics"],tags:["closed"],description:"",arxivId:"2610.02691"},
+  {title:"World Observer: Joint Actor-Observer Generation for Persistent World Modeling",url:"https://arxiv.org/abs/2610.02162",categories:["Dynamic Memory"],tags:["closed"],description:"",arxivId:"2610.02162"},
+  {title:"4Director: Controlling Video World Models with Rigid 3D Geometry",url:"https://arxiv.org/abs/2610.02160",categories:["Action Control"],tags:["opensource"],description:"",arxivId:"2610.02160"},
+  {title:"Oneira: From Open-Ended Generation to Open-World Interaction in Video World Models",url:"https://arxiv.org/abs/2610.01614",categories:["Interactive"],tags:["opensource"],description:"",arxivId:"2610.01614"},
+  {title:"LOCI: Spatial Linear Memory for Streaming World Models",url:"https://arxiv.org/abs/2609.40222",categories:["Static Memory"],tags:["opensource"],description:"",arxivId:"2609.40222"},
+  {title:"HelixWorld: A Real-time Interactive Audio-Visual World Model",url:"https://arxiv.org/abs/2609.38123",categories:["Interactive"],tags:["closed"],description:"",arxivId:"2609.38123"},
+  {title:"MUGEN: Interactive Panoramic World Exploration via Camera Control",url:"https://arxiv.org/abs/2609.38077",categories:["Dataset"],tags:["opensource"],description:"",arxivId:"2609.38077"},
+  {title:"Waypoint-1.5: A Real-Time Video World Model for Consumer Hardware",url:"https://arxiv.org/abs/2609.37107",categories:["Interactive"],tags:["closed"],description:"",arxivId:"2609.37107"},
+  {title:"MeteoVerse: Unified Weather-Controllable Video World Model",url:"https://arxiv.org/abs/2609.36810",categories:["Action Control"],tags:["closed"],description:"",arxivId:"2609.36810"},
+  {title:"WorldPlay2: Extending Real-Time Interactive World Models in Control and Horizon",url:"https://arxiv.org/abs/2609.35560",categories:["Interactive"],tags:["opensource"],description:"",arxivId:"2609.35560"},
+  {title:"OPIS: An Input-Grounded Benchmark for Multi-Object Memory in Video World Models",url:"https://arxiv.org/abs/2609.35052",categories:["Benchmark"],tags:["closed"],description:"",arxivId:"2609.35052"},
+  {title:"Geometry as Address: Routing Attention to Visual Memory for Long-Horizon Camera-Controlled Video Generation",url:"https://arxiv.org/abs/2609.34722",categories:["Static Memory"],tags:["opensource"],description:"",arxivId:"2609.34722"},
+  {title:"WorldAttention: An Efficient Attention Architecture for Interactive Video World Models",url:"https://arxiv.org/abs/2609.34606",categories:["Interactive"],tags:["opensource"],description:"",arxivId:"2609.34606"},
+  {title:"Precise Editing and Flexible Referencing for Interactable Worlds",url:"https://arxiv.org/abs/2609.34470",categories:["Interactive"],tags:["opensource"],description:"",arxivId:"2609.34470"},
+  {title:"CAST: Reconstruction-Coupled Acceleration of Interactive World Models",url:"https://arxiv.org/abs/2609.34144",categories:["Interactive"],tags:["opensource"],description:"",arxivId:"2609.34144"},
+  {title:"WorldAgent: Verification-Guided Agentic Physical World Construction",url:"https://arxiv.org/abs/2609.33208",categories:["Code4Gen"],tags:["closed"],description:"",arxivId:"2609.33208"},
+  {title:"Code as Worlds: Agentic Discovery of Executable World Representations for Physical Reasoning",url:"https://arxiv.org/abs/2608.27549",categories:["Code4Gen"],tags:["opensource"],description:"",arxivId:"2608.27549"},
+  {title:"GS-Agent: Creating 4D Physical Worlds With Generative Simulation",url:"https://arxiv.org/abs/2607.21522",categories:["Code4Gen"],tags:["opensource"],description:"",arxivId:"2607.21522"},
+  {title:"SimWorlds: A Multi-Agent System for Dynamic 3D Scene Creation",url:"https://arxiv.org/abs/2607.01766",categories:["Code4Gen"],tags:["opensource"],description:"",arxivId:"2607.01766"},
+  {title:"SceneCode: Executable World Programs for Editable Indoor Scenes with Articulated Objects",url:"https://arxiv.org/abs/2605.19587",categories:["Code4Gen"],tags:["opensource"],description:"",arxivId:"2605.19587"},
+  {title:"PhyScensis: Physics-Augmented LLM Agents for Complex Physical Scene Arrangement",url:"https://arxiv.org/abs/2602.14968",categories:["Code4Gen"],tags:["closed"],description:"",arxivId:"2602.14968"},
+  {title:"Code2Worlds: Empowering Coding LLMs for 4D World Generation",url:"https://arxiv.org/abs/2602.11757",categories:["Code4Gen"],tags:["opensource"],description:"",arxivId:"2602.11757"},
+  {title:"OneWorld: Learning Consistent Physics Across Actions in World Models",url:"https://arxiv.org/abs/2609.30946",categories:["Physics"],tags:["closed"],description:"",arxivId:"2609.30946"},
+  {title:"Code Plans, Diffusion Renders: Open-Ended Generative World Modeling",url:"https://arxiv.org/abs/2609.26458",categories:["Interactive"],tags:["opensource"],description:"",arxivId:"2609.26458"},
+  {title:"GameDirector: Decoupling Gameplay Logic from Rendering for Player-Configurable Game World Models",url:"https://arxiv.org/abs/2609.25652",categories:["Interactive"],tags:["opensource"],description:"",arxivId:"2609.25652"},
+  {title:"WorldCrafter: Consistent Video World Model with Implicit 3D-aware Memory",url:"https://arxiv.org/abs/2609.24984",categories:["Static Memory"],tags:["opensource"],description:"",arxivId:"2609.24984"},
+  {title:"HappyWorld-Bench",url:"https://arxiv.org/abs/2609.24308",categories:["Benchmark"],tags:["closed"],description:"",arxivId:"2609.24308"},
+  {title:"ConsistWorld: Evidence Routing for Consistent Multi-Agent World Models",url:"https://arxiv.org/abs/2609.22641",categories:["Multi-Agent World Model"],tags:["closed"],description:"",arxivId:"2609.22641"},
+  {title:"Astronex-World 1.0: Real-Time Interactive World Model Foundation",url:"https://arxiv.org/abs/2609.20034",categories:["Interactive"],tags:["opensource"],description:"",arxivId:"2609.20034"},
+  {title:"Zing-0.5: Toward Playable Worlds with Real-Time Joint Action and Text Control",url:"https://arxiv.org/abs/2609.17909",categories:["Interactive"],tags:["opensource"],description:"",arxivId:"2609.17909"},
+  {title:"AlayaVista: Streaming World Modeling from Panoramic States to Perspective Video",url:"https://arxiv.org/abs/2609.14462",categories:["Static Memory"],tags:["opensource"],description:"",arxivId:"2609.14462"},
   {title:"WorldExam: Benchmarking World Models from Apparent Appearance to Inherent Reactivity",url:"https://arxiv.org/abs/2608.02603",categories:["Benchmark"],tags:["opensource"],description:"",arxivId:"2608.02603"},
   {title:"MiniWorld: Democratizing the Training of Video World Models from Scratch",url:"https://arxiv.org/abs/2608.01127",categories:["General World Model"],tags:["opensource"],description:"",arxivId:"2608.01127"},
   {title:"WM-Cov: Test Adequacy for Interactive World-Model-Style Autonomous Driving Simulation",url:"https://arxiv.org/abs/2608.00298",categories:["Evaluation"],tags:["opensource"],description:"",arxivId:"2608.00298"},
@@ -421,7 +460,7 @@ const papers = [
 ];
 
 /* Categories list */
-const categories = ["General World Model","Multi-Agent World Model","Benchmark","Dataset","Long Video Generation","Static Memory","Dynamic Memory","Action Control","Interactive","Post-Training","Physics","Evaluation","Survey","Others"];
+const categories = ["General World Model","Multi-Agent World Model","Benchmark","Dataset","Long Video Generation","Static Memory","Dynamic Memory","Action Control","Interactive","Code4Gen","Post-Training","Physics","Evaluation","Survey","Others"];
 
 /* State */
 let activeTag = "all";

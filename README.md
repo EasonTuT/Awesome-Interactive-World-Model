@@ -408,7 +408,7 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 
 [2025-03] ✅[FAR: Frame Autoregressive Model for Both Short- and Long-Context Video Modeling](https://arxiv.org/abs/2503.19325)
 
-[2025-03] ✅[NOVA: Autoregressive Video Generation without Vector Quantization](https://arxiv.org/abs/2503.18723)
+[2024-12] ✅[NOVA: Autoregressive Video Generation without Vector Quantization](https://arxiv.org/abs/2412.14169)
 
 [2024-10] ✅[Progressive Autoregressive Video Diffusion Models](https://arxiv.org/abs/2410.08151)
 

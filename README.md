@@ -231,6 +231,8 @@ _Major updates and announcements are shown below. Scroll for full timeline._
 
 ## Multi-Agent World Model
 
+[2026-10] ✅[FlockWorld: Toward Population-Scale Multi-Agent Video World Models through Artificial Life Simulation](https://arxiv.org/abs/2610.34564)
+
 [2026-10] ✅[Multics: Generative Multi-Player World Model with Hierarchical Communication](https://arxiv.org/abs/2610.17201)
 
 [2026-10] ✅[WorldCast: Distributed Multiplayer World Models](https://arxiv.org/abs/2610.12412)
